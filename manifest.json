@@ -1,0 +1,243 @@
+{
+  "brand": "Proprietary Systems",
+  "domain": "proprietarysystems.ai",
+  "repository": {
+    "github": "https://github.com/Proprietary-Systems/proprietary-systems-brand-assets",
+    "ssh": "git@github.com-proprietarysystems:Proprietary-Systems/proprietary-systems-brand-assets.git",
+    "rawBase": "https://raw.githubusercontent.com/Proprietary-Systems/proprietary-systems-brand-assets/main"
+  },
+  "generatedFrom": "brand-assets/scripts/build-brand-assets.py",
+  "reference": "brand-assets/reference/proprietary-systems-logo-spec.jpg",
+  "colors": {
+    "mint": "#00E5C2",
+    "teal": "#0097A7",
+    "navy": "#0A2030",
+    "off_white": "#F6FBFB",
+    "mist": "#E6F2F2",
+    "white": "#FFFFFF",
+    "black": "#171717"
+  },
+  "typography": {
+    "primaryReference": "Geometric sans-serif",
+    "preferredSystemFont": "Avenir Next",
+    "svgFallback": "Avenir, Montserrat, Century Gothic, Arial, sans-serif"
+  },
+  "tooling": {
+    "pythonRequirements": "brand-assets/requirements.txt",
+    "primaryRenderer": "rsvg-convert",
+    "nativeUtilities": [
+      "cairo",
+      "librsvg",
+      "potrace",
+      "imagemagick"
+    ],
+    "buildScript": "brand-assets/scripts/build-brand-assets.py"
+  },
+  "qualityChecks": {
+    "logoSystemPreview": "brand-assets/preview/proprietary-systems-logo-system-preview.png",
+    "markFidelityComparison": "brand-assets/preview/mark-fidelity-comparison.png"
+  },
+  "sharedComponents": {
+    "react": "brand-assets/components/ProprietarySystemsLogo.tsx",
+    "package": "brand-assets/package.json"
+  },
+  "integrationTemplates": {
+    "modeAliases": "brand-assets/modes.json",
+    "cssTokens": "brand-assets/css/proprietary-systems-brand.css",
+    "webHead": "brand-assets/snippets/web-head.html",
+    "landingHeader": "brand-assets/snippets/landing-header.html",
+    "productHeader": "brand-assets/snippets/product-app-header.html",
+    "checkoutLogo": "brand-assets/snippets/checkout-logo.html",
+    "lightDarkUsage": "brand-assets/snippets/light-dark-usage.md",
+    "stripeBranding": "brand-assets/checkout/stripe-branding.json",
+    "webManifest": "brand-assets/web/site.webmanifest",
+    "emailSignature": "brand-assets/email/signature.html",
+    "emailSignatureCompact": "brand-assets/email/signature-compact.html",
+    "integrationGuide": "brand-assets/docs/integration-guide.md",
+    "agentPrompt": "brand-assets/docs/agent-prompt.md"
+  },
+  "modeAliases": {
+    "lightMode": {
+      "description": "Assets intended for light backgrounds or light UI chrome.",
+      "headerLogo": "brand-assets/svg/primary-horizontal-lockup.svg",
+      "compactLogo": "brand-assets/svg/secondary-horizontal-lockup.svg",
+      "documentLogo": "brand-assets/svg/monochrome-dark-horizontal.svg",
+      "wordmark": "brand-assets/svg/wordmark-ps-ai.svg",
+      "iconMark": "brand-assets/svg/icon-only-mark.svg",
+      "appIcon": "brand-assets/icons/app-icon-light-512.png",
+      "recommendedTextColor": "#0A2030",
+      "recommendedBackground": "#F6FBFB",
+      "tags": [
+        "light-mode",
+        "light-background",
+        "navy-mark",
+        "full-color"
+      ]
+    },
+    "darkMode": {
+      "description": "Assets intended for navy, black, or dark UI backgrounds.",
+      "headerLogo": "brand-assets/svg/primary-horizontal-lockup-on-dark.svg",
+      "compactLogo": "brand-assets/svg/secondary-horizontal-lockup-on-dark.svg",
+      "documentLogo": "brand-assets/svg/monochrome-white-horizontal.svg",
+      "wordmark": "brand-assets/svg/wordmark-ps-ai-on-dark.svg",
+      "iconMark": "brand-assets/svg/icon-only-mark.svg",
+      "appIcon": "brand-assets/icons/app-icon-dark-512.png",
+      "recommendedTextColor": "#F6FBFB",
+      "recommendedBackground": "#0A2030",
+      "tags": [
+        "dark-mode",
+        "dark-background",
+        "white-mark",
+        "full-color"
+      ]
+    },
+    "modeIndependent": {
+      "description": "Assets that work as standalone icons, favicons, or provider uploads.",
+      "faviconSvg": "brand-assets/svg/favicon.svg",
+      "faviconIco": "brand-assets/icons/favicon.ico",
+      "appleTouchIcon": "brand-assets/icons/app-icon-dark-180.png",
+      "pwaIcon192": "brand-assets/icons/app-icon-dark-192.png",
+      "pwaIcon512": "brand-assets/icons/app-icon-dark-512.png",
+      "socialAvatar": "brand-assets/icons/app-icon-dark-1024.png",
+      "tags": [
+        "mode-independent",
+        "favicon",
+        "app-icon",
+        "social-avatar"
+      ]
+    }
+  },
+  "variants": {
+    "primaryHorizontalLockup": {
+      "svg": "brand-assets/svg/primary-horizontal-lockup.svg",
+      "svgOnDark": "brand-assets/svg/primary-horizontal-lockup-on-dark.svg",
+      "pngOnDark": "brand-assets/png/primary-horizontal-lockup-on-dark.png",
+      "pngTransparent": "brand-assets/png/primary-horizontal-lockup-transparent.png",
+      "tags": [
+        "primary",
+        "horizontal-lockup",
+        "light-mode",
+        "light-background",
+        "full-color"
+      ]
+    },
+    "secondaryHorizontalLockup": {
+      "svg": "brand-assets/svg/secondary-horizontal-lockup.svg",
+      "svgOnDark": "brand-assets/svg/secondary-horizontal-lockup-on-dark.svg",
+      "pngOnDark": "brand-assets/png/secondary-horizontal-lockup-on-dark.png",
+      "pngTransparent": "brand-assets/png/secondary-horizontal-lockup-transparent.png",
+      "tags": [
+        "secondary",
+        "horizontal-lockup",
+        "compact",
+        "light-mode",
+        "light-background",
+        "full-color"
+      ]
+    },
+    "stackedLogo": {
+      "svg": "brand-assets/svg/stacked-logo.svg",
+      "svgOnDark": "brand-assets/svg/stacked-logo-on-dark.svg",
+      "pngOnDark": "brand-assets/png/stacked-logo-on-dark.png",
+      "tags": [
+        "stacked",
+        "dark-mode",
+        "dark-background",
+        "presentation",
+        "full-color"
+      ]
+    },
+    "iconOnlyMark": {
+      "svg": "brand-assets/svg/icon-only-mark.svg",
+      "pngTransparent": "brand-assets/png/icon-only-mark-transparent.png",
+      "tags": [
+        "icon-only",
+        "mark",
+        "transparent",
+        "mode-flexible"
+      ]
+    },
+    "wordmarkPsAi": {
+      "svg": "brand-assets/svg/wordmark-ps-ai.svg",
+      "svgOnDark": "brand-assets/svg/wordmark-ps-ai-on-dark.svg",
+      "pngOnDark": "brand-assets/png/wordmark-ps-ai-on-dark.png",
+      "pngTransparent": "brand-assets/png/wordmark-ps-ai-transparent.png",
+      "tags": [
+        "wordmark",
+        "ps-ai",
+        "light-mode",
+        "dark-mode"
+      ]
+    },
+    "monochromeWhite": {
+      "svg": "brand-assets/svg/monochrome-white-horizontal.svg",
+      "svgOnDark": "brand-assets/svg/monochrome-white-horizontal-on-dark.svg",
+      "pngTransparent": "brand-assets/png/monochrome-white-horizontal-transparent.png",
+      "pngOnDark": "brand-assets/png/monochrome-white-horizontal-on-dark.png",
+      "tags": [
+        "monochrome",
+        "white",
+        "dark-mode",
+        "dark-background",
+        "documents",
+        "email"
+      ]
+    },
+    "monochromeDark": {
+      "svg": "brand-assets/svg/monochrome-dark-horizontal.svg",
+      "svgOnLight": "brand-assets/svg/monochrome-dark-horizontal-on-light.svg",
+      "pngTransparent": "brand-assets/png/monochrome-dark-horizontal-transparent.png",
+      "pngOnLight": "brand-assets/png/monochrome-dark-horizontal-on-light.png",
+      "tags": [
+        "monochrome",
+        "dark",
+        "light-mode",
+        "light-background",
+        "documents",
+        "email"
+      ]
+    },
+    "appIcons": {
+      "faviconSvg": "brand-assets/svg/favicon.svg",
+      "faviconIco": "brand-assets/icons/favicon.ico",
+      "dark1024": "brand-assets/icons/app-icon-dark-1024.png",
+      "dark512": "brand-assets/icons/app-icon-dark-512.png",
+      "dark192": "brand-assets/icons/app-icon-dark-192.png",
+      "appleTouchIcon": "brand-assets/icons/app-icon-dark-180.png",
+      "light1024": "brand-assets/icons/app-icon-light-1024.png",
+      "teal1024": "brand-assets/icons/app-icon-teal-1024.png",
+      "black1024": "brand-assets/icons/app-icon-black-1024.png",
+      "circle1024": "brand-assets/icons/app-icon-circle-1024.png",
+      "tags": [
+        "app-icon",
+        "favicon",
+        "mode-independent",
+        "social-avatar"
+      ]
+    }
+  },
+  "applications": {
+    "stripe": {
+      "icon": "stripe-brand-assets/ps-stripe-icon.png",
+      "logoOnLight": "stripe-brand-assets/ps-stripe-logo-horizontal.png",
+      "logoOnDark": "stripe-brand-assets/ps-stripe-logo-dark-bg.png"
+    },
+    "websiteAndApps": {
+      "headerLogo": "brand-assets/svg/primary-horizontal-lockup.svg",
+      "compactLogo": "brand-assets/svg/secondary-horizontal-lockup.svg",
+      "favicon": "brand-assets/svg/favicon.svg",
+      "pwaIcon192": "brand-assets/icons/app-icon-dark-192.png",
+      "pwaIcon512": "brand-assets/icons/app-icon-dark-512.png",
+      "appleTouchIcon": "brand-assets/icons/app-icon-dark-180.png"
+    },
+    "githubOrgOrSocialProfile": {
+      "avatar": "brand-assets/icons/app-icon-dark-1024.png",
+      "lightAvatar": "brand-assets/icons/app-icon-light-1024.png"
+    },
+    "documentsSlidesEmail": {
+      "darkOnLight": "brand-assets/svg/monochrome-dark-horizontal.svg",
+      "whiteOnDark": "brand-assets/svg/monochrome-white-horizontal.svg",
+      "stacked": "brand-assets/svg/stacked-logo.svg"
+    }
+  }
+}

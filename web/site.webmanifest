@@ -1,0 +1,30 @@
+{
+  "name": "Proprietary Systems",
+  "short_name": "PS.AI",
+  "description": "Proprietary Systems",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A2030",
+  "theme_color": "#0A2030",
+  "icons": [
+    {
+      "src": "/brand-assets/icons/app-icon-dark-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/brand-assets/icons/app-icon-dark-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/brand-assets/icons/app-icon-dark-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
+

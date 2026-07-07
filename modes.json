@@ -1,0 +1,51 @@
+{
+  "lightMode": {
+    "description": "Assets intended for light backgrounds or light UI chrome.",
+    "headerLogo": "brand-assets/svg/primary-horizontal-lockup.svg",
+    "compactLogo": "brand-assets/svg/secondary-horizontal-lockup.svg",
+    "documentLogo": "brand-assets/svg/monochrome-dark-horizontal.svg",
+    "wordmark": "brand-assets/svg/wordmark-ps-ai.svg",
+    "iconMark": "brand-assets/svg/icon-only-mark.svg",
+    "appIcon": "brand-assets/icons/app-icon-light-512.png",
+    "recommendedTextColor": "#0A2030",
+    "recommendedBackground": "#F6FBFB",
+    "tags": [
+      "light-mode",
+      "light-background",
+      "navy-mark",
+      "full-color"
+    ]
+  },
+  "darkMode": {
+    "description": "Assets intended for navy, black, or dark UI backgrounds.",
+    "headerLogo": "brand-assets/svg/primary-horizontal-lockup-on-dark.svg",
+    "compactLogo": "brand-assets/svg/secondary-horizontal-lockup-on-dark.svg",
+    "documentLogo": "brand-assets/svg/monochrome-white-horizontal.svg",
+    "wordmark": "brand-assets/svg/wordmark-ps-ai-on-dark.svg",
+    "iconMark": "brand-assets/svg/icon-only-mark.svg",
+    "appIcon": "brand-assets/icons/app-icon-dark-512.png",
+    "recommendedTextColor": "#F6FBFB",
+    "recommendedBackground": "#0A2030",
+    "tags": [
+      "dark-mode",
+      "dark-background",
+      "white-mark",
+      "full-color"
+    ]
+  },
+  "modeIndependent": {
+    "description": "Assets that work as standalone icons, favicons, or provider uploads.",
+    "faviconSvg": "brand-assets/svg/favicon.svg",
+    "faviconIco": "brand-assets/icons/favicon.ico",
+    "appleTouchIcon": "brand-assets/icons/app-icon-dark-180.png",
+    "pwaIcon192": "brand-assets/icons/app-icon-dark-192.png",
+    "pwaIcon512": "brand-assets/icons/app-icon-dark-512.png",
+    "socialAvatar": "brand-assets/icons/app-icon-dark-1024.png",
+    "tags": [
+      "mode-independent",
+      "favicon",
+      "app-icon",
+      "social-avatar"
+    ]
+  }
+}

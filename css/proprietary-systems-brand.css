@@ -1,0 +1,43 @@
+:root {
+  --ps-color-mint: #00E5C2;
+  --ps-color-teal: #0097A7;
+  --ps-color-navy: #0A2030;
+  --ps-color-off-white: #F6FBFB;
+  --ps-color-mist: #E6F2F2;
+  --ps-font-geometric: "Avenir Next", Avenir, Montserrat, "Century Gothic", Arial, sans-serif;
+}
+
+.ps-brand-logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.ps-brand-logo--landing {
+  width: min(420px, 72vw);
+}
+
+.ps-brand-logo--product {
+  width: 220px;
+}
+
+.ps-brand-logo--checkout {
+  width: 180px;
+}
+
+.ps-brand-mark {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.ps-brand-surface-dark {
+  background: var(--ps-color-navy);
+  color: var(--ps-color-off-white);
+}
+
+.ps-brand-surface-light {
+  background: var(--ps-color-off-white);
+  color: var(--ps-color-navy);
+}
+

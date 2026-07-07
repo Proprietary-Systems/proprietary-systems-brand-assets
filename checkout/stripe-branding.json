@@ -1,0 +1,21 @@
+{
+  "provider": "stripe",
+  "brand": "Proprietary Systems",
+  "dashboardUploadAssets": {
+    "icon": "stripe-brand-assets/ps-stripe-icon.png",
+    "logoOnLight": "stripe-brand-assets/ps-stripe-logo-horizontal.png",
+    "logoOnDark": "stripe-brand-assets/ps-stripe-logo-dark-bg.png"
+  },
+  "recommendedCheckoutTheme": {
+    "primaryColor": "#00E5C2",
+    "accentColor": "#0097A7",
+    "backgroundColor": "#F6FBFB",
+    "textColor": "#0A2030"
+  },
+  "notes": [
+    "Use PNG exports for Stripe dashboard uploads.",
+    "Use monochrome dark logo on light checkout surfaces.",
+    "Use the dark-background logo only when the checkout or receipt surface is explicitly navy/dark."
+  ]
+}
+

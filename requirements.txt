@@ -1,0 +1,7 @@
+cairosvg==2.9.0
+fonttools==4.63.0
+pillow==12.3.0
+scour==0.38.2
+svgwrite==1.4.3
+vtracer==0.6.15
+

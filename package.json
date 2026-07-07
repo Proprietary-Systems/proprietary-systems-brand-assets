@@ -1,0 +1,23 @@
+{
+  "name": "@proprietary-systems/brand-assets",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Canonical Proprietary Systems logo assets, app icons, favicons, and shared retrieval helpers.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Proprietary-Systems/proprietary-systems-brand-assets.git"
+  },
+  "scripts": {
+    "build": "./.venv/bin/python scripts/build-brand-assets.py",
+    "verify:tools": "rsvg-convert --version && potrace --version && magick -version",
+    "verify:assets": "magick identify png/primary-horizontal-lockup-on-dark.png icons/favicon.ico ../stripe-brand-assets/ps-stripe-logo-horizontal.png"
+  },
+  "exports": {
+    "./manifest": "./manifest.json",
+    "./modes": "./modes.json",
+    "./react": "./components/index.ts",
+    "./css": "./css/proprietary-systems-brand.css",
+    "./web-manifest": "./web/site.webmanifest",
+    "./stripe-branding": "./checkout/stripe-branding.json"
+  }
+}
