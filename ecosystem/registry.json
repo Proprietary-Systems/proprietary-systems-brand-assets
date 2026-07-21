@@ -1,0 +1,650 @@
+{
+  "schemaVersion": 1,
+  "version": "1.2.0",
+  "lastReviewed": "2026-07-18",
+  "brand": "Proprietary Systems",
+  "suiteName": "Proprietary Systems",
+  "positioning": "One intelligent operating system for the entire business.",
+  "principles": [
+    "A customer business is the tenant; products are capabilities inside its operating environment.",
+    "The suite is industry-agnostic and configured through shared objects, workflows, permissions, and templates.",
+    "Every employee product enters through the suite even when security, compliance, or scale justify a separate runtime and data plane.",
+    "A hostname is a durable user or technical boundary, not a reason to duplicate a repository.",
+    "Canonical employee product pages and application routes use the unified marketing and application hosts; bounded APIs remain separate only when operations, compliance, or data architecture require it.",
+    "Client brands and delivery sites are tenants or external surfaces, never Proprietary Systems products."
+  ],
+  "tenantModel": {
+    "primaryTenant": "organization",
+    "defaultWorkspaceModel": "one workspace per customer business",
+    "hierarchy": [
+      "organization",
+      "business entities",
+      "divisions and locations",
+      "departments and teams",
+      "members and roles",
+      "external portal users"
+    ],
+    "sharedControlPlane": [
+      "identity",
+      "organization directory",
+      "entitlements",
+      "navigation",
+      "search",
+      "notifications",
+      "integrations",
+      "audit",
+      "files"
+    ],
+    "optionalPortfolioLayer": "An authorized parent organization may govern multiple business tenants without merging their operational data."
+  },
+  "launcher": {
+    "columns": 3,
+    "featuredLabel": "Quick access",
+    "allProductsLabel": "All products",
+    "featuredProducts": [
+      "ps-home",
+      "peter-ai",
+      "ps-crm",
+      "ps-prospect",
+      "ps-outreach",
+      "ps-dialer",
+      "ps-projects",
+      "ps-creatives",
+      "ps-calendar"
+    ]
+  },
+  "hosts": {
+    "canonical": [
+      {
+        "host": "proprietarysystems.ai",
+        "role": "public marketing and canonical product pages",
+        "status": "active"
+      },
+      {
+        "host": "app.proprietarysystems.ai",
+        "role": "unified authenticated suite and core module routes",
+        "status": "target"
+      },
+      {
+        "host": "api.proprietarysystems.ai",
+        "role": "shared platform API gateway",
+        "status": "reserved"
+      },
+      {
+        "host": "auth.proprietarysystems.ai",
+        "role": "shared identity and SSO boundary",
+        "status": "reserved"
+      },
+      {
+        "host": "portal.proprietarysystems.ai",
+        "role": "external customer portal",
+        "status": "target"
+      },
+      {
+        "host": "assets.proprietarysystems.ai",
+        "role": "versioned shared brand and application assets",
+        "status": "reserved"
+      },
+      {
+        "host": "status.proprietarysystems.ai",
+        "role": "public service health",
+        "status": "reserved"
+      }
+    ],
+    "separateRuntimeProducts": {
+      "ps-dialer": {
+        "compatibilityMarketing": "dialer.proprietarysystems.ai",
+        "compatibilityApp": "app.dialer.proprietarysystems.ai",
+        "api": "api.dialer.proprietarysystems.ai"
+      },
+      "ps-email-signatures": {
+        "compatibilityMarketing": "signatures.proprietarysystems.ai",
+        "compatibilityApp": "app.signatures.proprietarysystems.ai"
+      },
+      "ps-places": {
+        "api": "api.places.proprietarysystems.ai"
+      }
+    },
+    "migrations": [
+      {
+        "host": "crm.proprietarysystems.ai",
+        "currentRole": "legacy CRM application host",
+        "target": "https://app.proprietarysystems.ai/crm",
+        "behavior": "redirect after the unified app host is production-ready"
+      }
+    ],
+    "clientDelivery": [
+      {
+        "host": "canes.proprietarysystems.ai",
+        "role": "legacy client staging surface",
+        "productHost": false,
+        "target": "customer-owned production domain or a non-product preview environment"
+      }
+    ],
+    "retired": [
+      {
+        "host": "roofexteriors.proprietarysystems.ai",
+        "reason": "Outdated Root2Roof prototype removed from the active platform architecture.",
+        "action": "Retire DNS and deployment only after provider-state confirmation; preserve source history as an archive."
+      }
+    ]
+  },
+  "repositories": {
+    "canonical": [
+      {
+        "name": "proprietarysystems-ai-site",
+        "role": "public marketing and canonical product pages",
+        "runtimeProducts": [],
+        "consumes": ["ecosystem registry", "brand assets", "product illustrations"]
+      },
+      {
+        "name": "proprietary-systems-os",
+        "role": "shared control plane, unified application shell, and canonical product facades",
+        "runtimeProducts": [
+          "ps-home",
+          "peter-ai",
+          "ps-crm",
+          "ps-prospect",
+          "ps-outreach",
+          "ps-dialer",
+          "ps-contracts",
+          "ps-projects",
+          "ps-client-portal",
+          "ps-docs",
+          "ps-sheets",
+          "ps-calendar",
+          "ps-messages",
+          "ps-creatives",
+          "ps-sites",
+          "ps-automate",
+          "ps-email-signatures",
+          "ps-people",
+          "ps-finance",
+          "ps-insights",
+          "ps-strategy",
+          "ps-territory",
+          "ps-places"
+        ],
+        "consumes": ["ecosystem registry", "brand assets", "product launcher"]
+      },
+      {
+        "name": "ps-auto-dialer",
+        "role": "Dialer application, API, workers, and telephony data plane",
+        "runtimeProducts": ["ps-dialer"],
+        "consumes": ["shared identity", "organization context", "brand assets", "product launcher"]
+      },
+      {
+        "name": "proprietary-places",
+        "role": "Places application, API, and location-intelligence data plane",
+        "runtimeProducts": ["ps-places"],
+        "consumes": ["shared identity", "organization context", "brand assets", "product launcher"]
+      },
+      {
+        "name": "ps-internal/brand-assets",
+        "role": "canonical ecosystem contract, visual identity, product illustrations, and shared shell components",
+        "runtimeProducts": [],
+        "consumes": []
+      }
+    ],
+    "consolidate": [
+      {
+        "name": "ps-signature-software",
+        "role": "current Email Signatures compatibility runtime; transfer ownership and reconcile behind the canonical suite route",
+        "runtimeProducts": ["ps-email-signatures"]
+      },
+      {
+        "name": "proprietary-revenue-hub",
+        "role": "reusable revenue-workflow research; migrate durable capabilities into the unified suite"
+      }
+    ],
+    "referenceOnly": ["benchmark-crexi", "benchmark-placer-ai"],
+    "localWorktrees": ["proprietary-systems-os-peter-clean", "proprietary-systems-os-peter-drawer"],
+    "noncanonical": ["ps-landing-page-site"]
+  },
+  "navigation": [
+    {
+      "id": "platform",
+      "label": "Platform",
+      "products": ["ps-home", "peter-ai"]
+    },
+    {
+      "id": "revenue",
+      "label": "Revenue",
+      "products": ["ps-crm", "ps-prospect", "ps-outreach", "ps-dialer"]
+    },
+    {
+      "id": "agreements",
+      "label": "Agreements",
+      "products": ["ps-contracts"]
+    },
+    {
+      "id": "work",
+      "label": "Work",
+      "products": ["ps-projects", "ps-client-portal", "ps-docs", "ps-sheets", "ps-calendar", "ps-messages"]
+    },
+    {
+      "id": "create-operate",
+      "label": "Create & Operate",
+      "products": ["ps-creatives", "ps-sites", "ps-automate", "ps-email-signatures"]
+    },
+    {
+      "id": "company",
+      "label": "Company",
+      "products": ["ps-people", "ps-finance"]
+    },
+    {
+      "id": "intelligence",
+      "label": "Intelligence",
+      "products": ["ps-insights", "ps-strategy", "ps-territory", "ps-places"]
+    }
+  ],
+  "platformCapabilities": [
+    "admin",
+    "identity and access",
+    "global search",
+    "notifications",
+    "files and storage",
+    "integrations",
+    "data import and export",
+    "audit logs",
+    "developer API and webhooks"
+  ],
+  "products": [
+    {
+      "id": "ps-home",
+      "label": "PS Home",
+      "productClass": "suite-home",
+      "slug": "home",
+      "category": "platform",
+      "technicalBoundary": "platform-layer",
+      "includedInSuite": true,
+      "defaultRoute": "/",
+      "marketingPath": "/platform",
+      "definition": "unified application access and business command center",
+      "features": ["application launcher", "cross-functional overview", "global activity", "organization switching"],
+      "visual": {
+        "metaphor": "four-panel application gateway",
+        "excludes": ["external client collaboration", "website publishing"]
+      }
+    },
+    {
+      "id": "peter-ai",
+      "label": "PS.AI",
+      "productClass": "suite-module",
+      "slug": "ps-ai",
+      "category": "platform",
+      "technicalBoundary": "platform-layer",
+      "includedInSuite": true,
+      "defaultRoute": "/ps-ai",
+      "marketingPath": "/products/peter-ai",
+      "definition": "contextual customer assistant for conversation and policy-authorized business actions; product development remains in separately trusted internal Codex workflows",
+      "features": ["business assistant", "durable conversations", "product feedback", "policy-authorized business actions"],
+      "visual": {
+        "metaphor": "Proprietary Systems mark framing one calm assistant conversation",
+        "excludes": ["generic automation", "human employee records", "source-code development tools"]
+      }
+    },
+    {
+      "id": "ps-crm",
+      "label": "PS CRM",
+      "productClass": "suite-module",
+      "slug": "crm",
+      "category": "revenue",
+      "technicalBoundary": "platform-module",
+      "includedInSuite": true,
+      "defaultRoute": "/crm",
+      "marketingPath": "/products/crm",
+      "definition": "managed external relationships",
+      "features": ["accounts", "contacts", "opportunities", "pipelines", "relationship activity", "executive CRM dashboards"],
+      "visual": {
+        "metaphor": "external contact record",
+        "excludes": ["internal organizational structure", "new-person discovery"]
+      }
+    },
+    {
+      "id": "ps-prospect",
+      "label": "PS Prospect",
+      "productClass": "suite-module",
+      "slug": "prospect",
+      "category": "revenue",
+      "technicalBoundary": "platform-module",
+      "includedInSuite": true,
+      "defaultRoute": "/prospect",
+      "marketingPath": "/products/prospect",
+      "definition": "person and company discovery",
+      "features": ["company search", "person search", "lists", "enrichment", "qualification"],
+      "visual": {
+        "metaphor": "person inside a search lens",
+        "excludes": ["managed account records", "engagement sequences"]
+      }
+    },
+    {
+      "id": "ps-outreach",
+      "label": "PS Outreach",
+      "productClass": "suite-module",
+      "slug": "outreach",
+      "category": "revenue",
+      "technicalBoundary": "platform-module",
+      "includedInSuite": true,
+      "defaultRoute": "/outreach",
+      "marketingPath": "/products/outreach",
+      "definition": "asynchronous engagement",
+      "features": ["sequences", "email", "tasks", "templates", "engagement reporting"],
+      "visual": {
+        "metaphor": "paper plane and message",
+        "excludes": ["live calling", "prospect discovery"]
+      }
+    },
+    {
+      "id": "ps-dialer",
+      "label": "PS Dialer",
+      "productClass": "suite-module",
+      "slug": "dialer",
+      "category": "revenue",
+      "technicalBoundary": "specialized-data-plane",
+      "includedInSuite": true,
+      "defaultRoute": "/dialer",
+      "marketingPath": "/products/dialer",
+      "definition": "live calling",
+      "features": ["calling queues", "live call controls", "dispositions", "call intelligence", "coaching"],
+      "visual": {
+        "metaphor": "telephone handset and keypad",
+        "excludes": ["asynchronous engagement", "internal messaging"]
+      }
+    },
+    {
+      "id": "ps-contracts",
+      "label": "PS Contracts",
+      "productClass": "suite-module",
+      "slug": "contracts",
+      "category": "agreements",
+      "technicalBoundary": "platform-module",
+      "includedInSuite": true,
+      "defaultRoute": "/contracts",
+      "marketingPath": "/products/contracts",
+      "definition": "agreement lifecycle, execution, and legal operations",
+      "features": ["templates", "approvals", "negotiation", "signature envelopes", "completion evidence", "obligations", "renewals", "legal operations"],
+      "visual": {
+        "metaphor": "agreement with governance shield",
+        "excludes": ["employee email-signature management", "generic document authoring"]
+      }
+    },
+    {
+      "id": "ps-email-signatures",
+      "label": "PS Email Signatures",
+      "productClass": "suite-module",
+      "slug": "email-signatures",
+      "category": "create-operate",
+      "technicalBoundary": "compatibility-web-runtime",
+      "includedInSuite": true,
+      "defaultRoute": "/email-signatures",
+      "marketingPath": "/products/email-signatures",
+      "definition": "employee email-signature design, assignment, deployment, and campaign management",
+      "features": ["brand templates", "employee assignments", "hosted signatures", "deployment status", "campaign banners", "performance analytics"],
+      "visual": {
+        "metaphor": "email composer with a branded employee signature card",
+        "excludes": ["contract execution", "generic document authoring"]
+      }
+    },
+    {
+      "id": "ps-projects",
+      "label": "PS Projects",
+      "productClass": "suite-module",
+      "slug": "projects",
+      "category": "work",
+      "technicalBoundary": "platform-module",
+      "includedInSuite": true,
+      "defaultRoute": "/projects",
+      "marketingPath": "/products/projects",
+      "definition": "coordinated work",
+      "features": ["projects", "tasks", "milestones", "owners", "delivery views"],
+      "visual": {
+        "metaphor": "shared work checklist",
+        "excludes": ["document authoring", "agreement lifecycle"]
+      }
+    },
+    {
+      "id": "ps-client-portal",
+      "label": "Client Portal",
+      "productClass": "external-surface",
+      "slug": "client-portal",
+      "category": "work",
+      "technicalBoundary": "external-guest-surface",
+      "includedInSuite": true,
+      "defaultRoute": "https://portal.proprietarysystems.ai",
+      "marketingPath": "/products/client-portal",
+      "definition": "external customer onboarding and collaboration",
+      "features": ["onboarding", "requests", "shared files", "approvals", "project visibility", "guest access"],
+      "visual": {
+        "metaphor": "customer profile inside a portal window",
+        "excludes": ["internal application launcher", "public website publishing"]
+      }
+    },
+    {
+      "id": "ps-docs",
+      "label": "PS Docs",
+      "productClass": "suite-module",
+      "slug": "docs",
+      "category": "work",
+      "technicalBoundary": "platform-module",
+      "includedInSuite": true,
+      "defaultRoute": "/docs",
+      "marketingPath": "/products/docs",
+      "definition": "document authoring",
+      "features": ["documents", "collaboration", "templates", "comments", "version history"],
+      "visual": {
+        "metaphor": "single authored page",
+        "excludes": ["agreement lifecycle", "coordinated work"]
+      }
+    },
+    {
+      "id": "ps-sheets",
+      "label": "PS Sheets",
+      "productClass": "suite-module",
+      "slug": "sheets",
+      "category": "work",
+      "technicalBoundary": "platform-module",
+      "includedInSuite": true,
+      "defaultRoute": "/sheets",
+      "marketingPath": "/products/sheets",
+      "definition": "structured calculation and tabular modeling",
+      "features": ["spreadsheets", "formulas", "tables", "imports", "linked business data"],
+      "visual": {
+        "metaphor": "spreadsheet grid with active cells",
+        "excludes": ["executive analytics", "document authoring"]
+      }
+    },
+    {
+      "id": "ps-calendar",
+      "label": "PS Calendar",
+      "productClass": "suite-module",
+      "slug": "calendar",
+      "category": "work",
+      "technicalBoundary": "platform-module",
+      "includedInSuite": true,
+      "defaultRoute": "/calendar",
+      "marketingPath": "/products/calendar",
+      "definition": "shared scheduling and business time",
+      "features": ["team calendars", "scheduling", "deadlines", "external calendar sync", "resource views"],
+      "visual": {
+        "metaphor": "calendar page with scheduled blocks",
+        "excludes": ["project task management", "employee timekeeping"]
+      }
+    },
+    {
+      "id": "ps-messages",
+      "label": "PS Messages",
+      "productClass": "suite-module",
+      "slug": "messages",
+      "category": "work",
+      "technicalBoundary": "platform-module",
+      "includedInSuite": true,
+      "defaultRoute": "/messages",
+      "marketingPath": "/products/messages",
+      "definition": "internal and contextual business messaging",
+      "features": ["conversations", "channels", "record-linked threads", "notifications", "external handoffs"],
+      "visual": {
+        "metaphor": "overlapping conversation bubbles",
+        "excludes": ["outbound sequences", "live calling"]
+      }
+    },
+    {
+      "id": "ps-creatives",
+      "label": "PS Creatives",
+      "productClass": "suite-module",
+      "slug": "creatives",
+      "category": "create-operate",
+      "technicalBoundary": "platform-module",
+      "includedInSuite": true,
+      "defaultRoute": "/creatives",
+      "marketingPath": "/products/creatives",
+      "definition": "visual design, creative production, and brand assets",
+      "features": ["design canvas", "brand kits", "campaign materials", "presentations", "production templates", "AI-assisted creation"],
+      "visual": {
+        "metaphor": "creative artboard with a design tool",
+        "excludes": ["AI assistant identity", "website publishing", "generic document authoring"]
+      }
+    },
+    {
+      "id": "ps-sites",
+      "label": "PS Sites",
+      "productClass": "suite-module",
+      "slug": "sites",
+      "category": "create-operate",
+      "technicalBoundary": "platform-module",
+      "includedInSuite": true,
+      "defaultRoute": "/sites",
+      "marketingPath": "/products/sites",
+      "definition": "website publishing",
+      "features": ["site builder", "pages", "forms", "domains", "publishing", "analytics"],
+      "visual": {
+        "metaphor": "browser and globe",
+        "excludes": ["internal application access", "document authoring"]
+      }
+    },
+    {
+      "id": "ps-automate",
+      "label": "PS Automate",
+      "productClass": "suite-module",
+      "slug": "automate",
+      "category": "create-operate",
+      "technicalBoundary": "platform-module",
+      "includedInSuite": true,
+      "defaultRoute": "/automate",
+      "marketingPath": "/products/automate",
+      "definition": "workflow triggers and connected actions",
+      "features": ["workflows", "triggers", "actions", "approvals", "integration blocks", "run history"],
+      "visual": {
+        "metaphor": "lightning between linked nodes",
+        "excludes": ["AI assistant identity", "project task management"]
+      }
+    },
+    {
+      "id": "ps-people",
+      "label": "PS People",
+      "productClass": "suite-module",
+      "slug": "people",
+      "category": "company",
+      "technicalBoundary": "platform-module",
+      "includedInSuite": true,
+      "defaultRoute": "/people",
+      "marketingPath": "/products/people",
+      "definition": "internal organizational structure and people operations",
+      "features": ["employee records", "organization", "policies", "benefits", "onboarding", "payroll coordination and provider integrations"],
+      "visual": {
+        "metaphor": "organization hierarchy",
+        "excludes": ["external relationship records", "prospect discovery"]
+      }
+    },
+    {
+      "id": "ps-finance",
+      "label": "PS Finance",
+      "productClass": "suite-module",
+      "slug": "finance",
+      "category": "company",
+      "technicalBoundary": "platform-module",
+      "includedInSuite": true,
+      "defaultRoute": "/finance",
+      "marketingPath": "/products/finance",
+      "definition": "financial planning, forecasting, and performance",
+      "features": ["budgets", "forecasts", "cash planning", "management reporting", "accounting and payment integrations"],
+      "visual": {
+        "metaphor": "growth bars and trend line",
+        "excludes": ["general analytics", "regulated accounting execution"]
+      }
+    },
+    {
+      "id": "ps-insights",
+      "label": "PS Insights",
+      "productClass": "suite-module",
+      "slug": "insights",
+      "category": "intelligence",
+      "technicalBoundary": "platform-module",
+      "includedInSuite": true,
+      "defaultRoute": "/insights",
+      "marketingPath": "/products/insights",
+      "definition": "cross-functional executive analytics",
+      "features": ["executive dashboards", "custom metrics", "drilldowns", "cross-product reporting", "alerts"],
+      "visual": {
+        "metaphor": "dashboard with coordinated charts",
+        "excludes": ["financial planning", "spreadsheet modeling"]
+      }
+    },
+    {
+      "id": "ps-strategy",
+      "label": "PS Strategy",
+      "productClass": "suite-module",
+      "slug": "strategy",
+      "category": "intelligence",
+      "technicalBoundary": "platform-module",
+      "includedInSuite": true,
+      "defaultRoute": "/strategy",
+      "marketingPath": "/products/strategy",
+      "definition": "strategic planning and decision coordination",
+      "features": ["strategy rooms", "objectives", "initiatives", "decision records", "scenario planning"],
+      "visual": {
+        "metaphor": "compass over a planning field",
+        "excludes": ["project task execution", "geographic territory"]
+      }
+    },
+    {
+      "id": "ps-territory",
+      "label": "PS Territory",
+      "productClass": "suite-module",
+      "slug": "territory",
+      "category": "intelligence",
+      "technicalBoundary": "platform-module",
+      "includedInSuite": true,
+      "defaultRoute": "/territory",
+      "marketingPath": "/products/territory",
+      "definition": "operational geographic coverage",
+      "features": ["territories", "coverage rules", "assignment", "routing", "regional performance"],
+      "visual": {
+        "metaphor": "route across a folded map",
+        "excludes": ["property intelligence", "project coordination"]
+      }
+    },
+    {
+      "id": "ps-places",
+      "label": "PS Places",
+      "productClass": "suite-module",
+      "slug": "places",
+      "category": "intelligence",
+      "technicalBoundary": "specialized-data-plane",
+      "includedInSuite": true,
+      "defaultRoute": "/places",
+      "marketingPath": "/products/places",
+      "definition": "property and location intelligence",
+      "features": ["property discovery", "location intelligence", "maps", "reports", "saved opportunities"],
+      "visual": {
+        "metaphor": "building and location pin",
+        "excludes": ["operational territory coverage", "generic map search"]
+      }
+    }
+  ],
+  "aliases": {
+    "ps-portal": "ps-home",
+    "peter-studio": "ps-creatives",
+    "ps-signatures": "ps-email-signatures"
+  }
+}

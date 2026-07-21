@@ -7,6 +7,7 @@
     "rawBase": "https://raw.githubusercontent.com/Proprietary-Systems/proprietary-systems-brand-assets/main"
   },
   "generatedFrom": "brand-assets/scripts/build-brand-assets.py",
+  "ecosystemRegistry": "brand-assets/ecosystem/registry.json",
   "reference": "brand-assets/reference/proprietary-systems-logo-spec.jpg",
   "colors": {
     "mint": "#00E5C2",
@@ -35,10 +36,21 @@
   },
   "qualityChecks": {
     "logoSystemPreview": "brand-assets/preview/proprietary-systems-logo-system-preview.png",
-    "markFidelityComparison": "brand-assets/preview/mark-fidelity-comparison.png"
+    "markFidelityComparison": "brand-assets/preview/mark-fidelity-comparison.png",
+    "productIconContactSheet": "brand-assets/preview/product-illustrations-v4-light-contact-sheet.png",
+    "productIconDarkContactSheet": "brand-assets/preview/product-illustrations-v4-dark-contact-sheet.png",
+    "productIconLegibility": "brand-assets/preview/product-illustrations-v4-48px-legibility.png",
+    "productDioramaContactSheet": "brand-assets/preview/product-illustrations-v3-light-contact-sheet.png",
+    "productDioramaDarkContactSheet": "brand-assets/preview/product-illustrations-v3-dark-contact-sheet.png",
+    "productDioramaThemeComparison": "brand-assets/preview/product-illustrations-v3-theme-comparison.png"
   },
   "sharedComponents": {
-    "react": "brand-assets/components/ProprietarySystemsLogo.tsx",
+    "react": "brand-assets/components/index.ts",
+    "logo": "brand-assets/components/ProprietarySystemsLogo.tsx",
+    "productIllustration": "brand-assets/components/ProductIllustration.tsx",
+    "productTile": "brand-assets/components/ProductTile.tsx",
+    "appLauncher": "brand-assets/components/AppLauncher.tsx",
+    "productCatalog": "brand-assets/components/productIllustrationCatalog.ts",
     "package": "brand-assets/package.json"
   },
   "integrationTemplates": {
@@ -54,7 +66,13 @@
     "emailSignature": "brand-assets/email/signature.html",
     "emailSignatureCompact": "brand-assets/email/signature-compact.html",
     "integrationGuide": "brand-assets/docs/integration-guide.md",
-    "agentPrompt": "brand-assets/docs/agent-prompt.md"
+    "agentPrompt": "brand-assets/docs/agent-prompt.md",
+    "ecosystemRegistry": "brand-assets/ecosystem/registry.json",
+    "productIllustrations": "brand-assets/svg/product-illustrations-v4/manifest.json",
+    "productIllustrationsV3": "brand-assets/svg/product-illustrations-v3/manifest.json",
+    "productIllustrationsV2": "brand-assets/svg/product-illustrations-v2/manifest.json",
+    "productIllustrationsLegacy": "brand-assets/svg/product-illustrations/manifest.json",
+    "appLauncherPreview": "brand-assets/preview/app-launcher/index.html"
   },
   "modeAliases": {
     "lightMode": {
@@ -214,6 +232,16 @@
         "mode-independent",
         "social-avatar"
       ]
+    },
+    "appLauncherTrigger": {
+      "light": "brand-assets/svg/app-launcher-grid-light.svg",
+      "dark": "brand-assets/svg/app-launcher-grid-dark.svg",
+      "tags": [
+        "application-launcher",
+        "nine-dot-grid",
+        "light-mode",
+        "dark-mode"
+      ]
     }
   },
   "applications": {
@@ -228,7 +256,9 @@
       "favicon": "brand-assets/svg/favicon.svg",
       "pwaIcon192": "brand-assets/icons/app-icon-dark-192.png",
       "pwaIcon512": "brand-assets/icons/app-icon-dark-512.png",
-      "appleTouchIcon": "brand-assets/icons/app-icon-dark-180.png"
+      "appleTouchIcon": "brand-assets/icons/app-icon-dark-180.png",
+      "launcherTriggerLight": "brand-assets/svg/app-launcher-grid-light.svg",
+      "launcherTriggerDark": "brand-assets/svg/app-launcher-grid-dark.svg"
     },
     "githubOrgOrSocialProfile": {
       "avatar": "brand-assets/icons/app-icon-dark-1024.png",
@@ -238,6 +268,16 @@
       "darkOnLight": "brand-assets/svg/monochrome-dark-horizontal.svg",
       "whiteOnDark": "brand-assets/svg/monochrome-white-horizontal.svg",
       "stacked": "brand-assets/svg/stacked-logo.svg"
+    },
+    "productTiles": {
+      "manifest": "brand-assets/svg/product-illustrations-v4/manifest.json",
+      "preview": "brand-assets/svg/product-illustrations-v4/preview.html",
+      "assetDirectory": "brand-assets/svg/product-illustrations-v4",
+      "lightDirectory": "brand-assets/svg/product-illustrations-v4/light",
+      "darkDirectory": "brand-assets/svg/product-illustrations-v4/dark",
+      "v3Manifest": "brand-assets/svg/product-illustrations-v3/manifest.json",
+      "v2Manifest": "brand-assets/svg/product-illustrations-v2/manifest.json",
+      "legacyManifest": "brand-assets/svg/product-illustrations/manifest.json"
     }
   }
 }

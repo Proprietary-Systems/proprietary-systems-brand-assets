@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc" data-illustration-version="4" data-theme="light" shape-rendering="geometricPrecision">
+<title id="title">PS Sheets flat-object product icon</title><desc id="desc">structured calculation and tabular modeling, represented by spreadsheet grid with active cells.</desc>
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0A2030" flood-opacity=".12"/></filter></defs>
+<g filter="url(#shadow)">
+<rect x="41" y="34" width="174" height="188" rx="14" fill="#E6F2F2" stroke="#0A2030" stroke-width="5"/>
+<path d="M41 79h174M89 79v143M151 79v143M41 126h174M41 173h174" stroke="#0A2030" stroke-width="5"/>
+<path d="M41 48c0-8 6-14 14-14h146c8 0 14 6 14 14v31H41Z" fill="#0097A7"/>
+<rect x="94" y="132" width="52" height="35" rx="5" fill="#00E5C2"/><path d="M103 150h34" stroke="#0A2030" stroke-width="5" stroke-linecap="round"/></g>
+</svg>

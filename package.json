@@ -1,6 +1,6 @@
 {
   "name": "@proprietary-systems/brand-assets",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "description": "Canonical Proprietary Systems logo assets, app icons, favicons, and shared retrieval helpers.",
   "repository": {
@@ -8,16 +8,34 @@
     "url": "git+https://github.com/Proprietary-Systems/proprietary-systems-brand-assets.git"
   },
   "scripts": {
-    "build": "./.venv/bin/python scripts/build-brand-assets.py",
+    "dev": "vite ..",
+    "build": "./.venv/bin/python scripts/build-brand-assets.py && npm run verify:ecosystem",
+    "build:product-tiles": "./.venv/bin/python scripts/build-product-illustrations-v4.py && npm run verify:ecosystem",
+    "build:product-dioramas": "./.venv/bin/python scripts/build-product-illustrations-v3.py",
+    "verify:react": "tsc --noEmit -p tsconfig.json",
     "verify:tools": "rsvg-convert --version && potrace --version && magick -version",
-    "verify:assets": "magick identify png/primary-horizontal-lockup-on-dark.png icons/favicon.ico ../stripe-brand-assets/ps-stripe-logo-horizontal.png"
+    "verify:assets": "magick identify png/primary-horizontal-lockup-on-dark.png icons/favicon.ico ../stripe-brand-assets/ps-stripe-logo-horizontal.png",
+    "verify:ecosystem": "./.venv/bin/python scripts/validate-ecosystem.py"
   },
   "exports": {
     "./manifest": "./manifest.json",
+    "./ecosystem": "./ecosystem/registry.json",
     "./modes": "./modes.json",
     "./react": "./components/index.ts",
+    "./product-illustrations": "./components/productIllustrationCatalog.ts",
     "./css": "./css/proprietary-systems-brand.css",
     "./web-manifest": "./web/site.webmanifest",
     "./stripe-branding": "./checkout/stripe-branding.json"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "typescript": "^7.0.2",
+    "vite": "^8.1.4"
   }
 }

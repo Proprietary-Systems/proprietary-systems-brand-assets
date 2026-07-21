@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc" data-illustration-version="4" data-theme="dark" shape-rendering="geometricPrecision">
+<title id="title">PS.AI flat-object product icon</title><desc id="desc">contextual customer assistant for conversation and policy-authorized business actions; product development remains in separately trusted internal Codex workflows, represented by Proprietary Systems mark framing one calm assistant conversation.</desc>
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#000A10" flood-opacity=".28"/></filter></defs>
+<g filter="url(#shadow)">
+<rect x="63" y="57" width="130" height="143" rx="42" fill="#193F4B"/>
+<path d="M128 57V31" stroke="#DDF4F1" stroke-width="8" stroke-linecap="round"/><circle cx="128" cy="25" r="10" fill="#00AFC0"/>
+<rect x="46" y="94" width="24" height="58" rx="10" fill="#DDF4F1"/><rect x="186" y="94" width="24" height="58" rx="10" fill="#DDF4F1"/>
+<rect x="78" y="79" width="100" height="91" rx="29" fill="#DDF4F1"/>
+<circle cx="107" cy="118" r="10" fill="#00E5C2"/><circle cx="149" cy="118" r="10" fill="#00E5C2"/>
+<path d="M109 145c12 10 26 10 38 0" fill="none" stroke="#00E5C2" stroke-width="8" stroke-linecap="round"/>
+<path d="M96 200h64v17c0 8-6 14-14 14h-36c-8 0-14-6-14-14Z" fill="#00AFC0"/></g>
+</svg>

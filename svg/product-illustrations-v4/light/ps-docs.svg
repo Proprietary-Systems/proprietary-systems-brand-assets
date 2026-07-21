@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc" data-illustration-version="4" data-theme="light" shape-rendering="geometricPrecision">
+<title id="title">PS Docs flat-object product icon</title><desc id="desc">document authoring, represented by single authored page.</desc>
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0A2030" flood-opacity=".12"/></filter></defs>
+<g filter="url(#shadow)">
+<rect x="75" y="42" width="126" height="168" rx="8" fill="#E6F2F2"/>
+<path d="M55 24h112l35 35v161H55Z" fill="#FFFFFF" stroke="#0A2030" stroke-width="5" stroke-linejoin="round"/><path d="M167 24v35h35" fill="#0097A7"/>
+<path d="M82 91h71M82 119h89M82 147h76M82 175h55" stroke="#0A2030" stroke-width="7" stroke-linecap="round"/></g>
+</svg>

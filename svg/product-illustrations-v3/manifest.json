@@ -1,0 +1,169 @@
+{
+  "name": "Proprietary Systems Product Dioramas",
+  "version": "3.0.0",
+  "viewBox": "0 0 320 240",
+  "preferred": true,
+  "direction": "Clean 2D isometric product dioramas with paired light and dark variants",
+  "products": [
+    {
+      "id": "peter-ai",
+      "label": "Peter.ai",
+      "productClass": "platform",
+      "master": "masters/peter-ai.svg",
+      "variants": {
+        "light": "light/peter-ai.svg",
+        "dark": "dark/peter-ai.svg"
+      }
+    },
+    {
+      "id": "ps-crm",
+      "label": "PS CRM",
+      "productClass": "platform",
+      "master": "masters/ps-crm.svg",
+      "variants": {
+        "light": "light/ps-crm.svg",
+        "dark": "dark/ps-crm.svg"
+      }
+    },
+    {
+      "id": "ps-prospect",
+      "label": "PS Prospect",
+      "productClass": "platform",
+      "master": "masters/ps-prospect.svg",
+      "variants": {
+        "light": "light/ps-prospect.svg",
+        "dark": "dark/ps-prospect.svg"
+      }
+    },
+    {
+      "id": "ps-outreach",
+      "label": "PS Outreach",
+      "productClass": "platform",
+      "master": "masters/ps-outreach.svg",
+      "variants": {
+        "light": "light/ps-outreach.svg",
+        "dark": "dark/ps-outreach.svg"
+      }
+    },
+    {
+      "id": "ps-dialer",
+      "label": "PS Dialer",
+      "productClass": "standalone",
+      "master": "masters/ps-dialer.svg",
+      "variants": {
+        "light": "light/ps-dialer.svg",
+        "dark": "dark/ps-dialer.svg"
+      }
+    },
+    {
+      "id": "ps-contracts",
+      "label": "PS Contracts",
+      "productClass": "platform",
+      "master": "masters/ps-contracts.svg",
+      "variants": {
+        "light": "light/ps-contracts.svg",
+        "dark": "dark/ps-contracts.svg"
+      }
+    },
+    {
+      "id": "ps-signatures",
+      "label": "PS Signatures",
+      "productClass": "standalone",
+      "master": "masters/ps-signatures.svg",
+      "variants": {
+        "light": "light/ps-signatures.svg",
+        "dark": "dark/ps-signatures.svg"
+      }
+    },
+    {
+      "id": "ps-finance",
+      "label": "PS Finance",
+      "productClass": "platform",
+      "master": "masters/ps-finance.svg",
+      "variants": {
+        "light": "light/ps-finance.svg",
+        "dark": "dark/ps-finance.svg"
+      }
+    },
+    {
+      "id": "ps-people",
+      "label": "PS People",
+      "productClass": "platform",
+      "master": "masters/ps-people.svg",
+      "variants": {
+        "light": "light/ps-people.svg",
+        "dark": "dark/ps-people.svg"
+      }
+    },
+    {
+      "id": "ps-docs",
+      "label": "PS Docs",
+      "productClass": "platform",
+      "master": "masters/ps-docs.svg",
+      "variants": {
+        "light": "light/ps-docs.svg",
+        "dark": "dark/ps-docs.svg"
+      }
+    },
+    {
+      "id": "ps-automate",
+      "label": "PS Automate",
+      "productClass": "platform",
+      "master": "masters/ps-automate.svg",
+      "variants": {
+        "light": "light/ps-automate.svg",
+        "dark": "dark/ps-automate.svg"
+      }
+    },
+    {
+      "id": "ps-sites",
+      "label": "PS Sites",
+      "productClass": "platform",
+      "master": "masters/ps-sites.svg",
+      "variants": {
+        "light": "light/ps-sites.svg",
+        "dark": "dark/ps-sites.svg"
+      }
+    },
+    {
+      "id": "ps-projects",
+      "label": "PS Projects",
+      "productClass": "platform",
+      "master": "masters/ps-projects.svg",
+      "variants": {
+        "light": "light/ps-projects.svg",
+        "dark": "dark/ps-projects.svg"
+      }
+    },
+    {
+      "id": "ps-portal",
+      "label": "PS Portal",
+      "productClass": "platform",
+      "master": "masters/ps-portal.svg",
+      "variants": {
+        "light": "light/ps-portal.svg",
+        "dark": "dark/ps-portal.svg"
+      }
+    },
+    {
+      "id": "ps-territory",
+      "label": "PS Territory",
+      "productClass": "platform",
+      "master": "masters/ps-territory.svg",
+      "variants": {
+        "light": "light/ps-territory.svg",
+        "dark": "dark/ps-territory.svg"
+      }
+    },
+    {
+      "id": "ps-places",
+      "label": "Proprietary Places",
+      "productClass": "standalone",
+      "master": "masters/ps-places.svg",
+      "variants": {
+        "light": "light/ps-places.svg",
+        "dark": "dark/ps-places.svg"
+      }
+    }
+  ]
+}

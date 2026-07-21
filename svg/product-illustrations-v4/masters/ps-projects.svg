@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc" data-illustration-version="4" data-theme="master" shape-rendering="geometricPrecision">
+<title id="title">PS Projects flat-object product icon</title><desc id="desc">coordinated work, represented by shared work checklist.</desc>
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0A2030" flood-opacity=".12"/></filter></defs>
+<g filter="url(#shadow)">
+<path d="M48 26h132l29 29v177H48Z" fill="#E6F2F2"/><path d="M180 26v29h29" fill="#0097A7"/>
+<path d="m72 80 11 11 19-23m-30 59 11 11 19-23m-30 59 11 11 19-23" fill="none" stroke="#00E5C2" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M119 82h60M119 129h60M119 176h43" stroke="#0A2030" stroke-width="8" stroke-linecap="round"/></g>
+</svg>

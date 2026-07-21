@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc" data-illustration-version="4" data-theme="dark" shape-rendering="geometricPrecision">
+<title id="title">PS Prospect flat-object product icon</title><desc id="desc">person and company discovery, represented by person inside a search lens.</desc>
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#000A10" flood-opacity=".28"/></filter></defs>
+<g filter="url(#shadow)">
+<rect x="101" y="92" width="102" height="101" rx="11" fill="#193F4B"/>
+<circle cx="111" cy="105" r="58" fill="#103744" stroke="#DDF4F1" stroke-width="14"/>
+<circle cx="111" cy="88" r="18" fill="#00E5C2"/><path d="M75 139c5-25 18-38 36-38s31 13 36 38Z" fill="#00E5C2"/>
+<path d="m153 148 47 47" stroke="#DDF4F1" stroke-width="18" stroke-linecap="round"/></g>
+</svg>

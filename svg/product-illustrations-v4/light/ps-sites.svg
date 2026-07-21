@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc" data-illustration-version="4" data-theme="light" shape-rendering="geometricPrecision">
+<title id="title">PS Sites flat-object product icon</title><desc id="desc">website publishing, represented by browser and globe.</desc>
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0A2030" flood-opacity=".12"/></filter></defs>
+<g filter="url(#shadow)">
+<rect x="37" y="45" width="182" height="169" rx="14" fill="#E6F2F2" stroke="#0A2030" stroke-width="5"/>
+<path d="M37 74h182" stroke="#0A2030" stroke-width="12"/><circle cx="57" cy="59" r="5" fill="#00E5C2"/><circle cx="75" cy="59" r="5" fill="#0097A7"/><circle cx="93" cy="59" r="5" fill="#FFFFFF"/>
+<circle cx="128" cy="141" r="47" fill="#0097A7"/><circle cx="128" cy="141" r="39" fill="none" stroke="#FFFFFF" stroke-width="6"/><path d="M89 141h78M128 102v78M103 110c22 20 22 43 0 62M153 110c-22 20-22 43 0 62" fill="none" stroke="#FFFFFF" stroke-width="5"/></g>
+</svg>

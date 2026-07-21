@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" data-illustration-version="3" data-theme="dark" shape-rendering="geometricPrecision" viewBox="0 0 320 240" role="img" aria-labelledby="t d">
+<title id="t">PS Projects product diorama</title><desc id="d">A spatial delivery board moving work from plan through review to completion.</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00E5C2"/><stop offset="1" stop-color="#00AFC0"/></linearGradient><filter id="s" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="9" stdDeviation="7" flood-color="#000A10" flood-opacity=".32"/></filter></defs>
+<g aria-hidden="true" class="v3-atmosphere">
+  <ellipse cx="160" cy="205" rx="130" ry="19" fill="#00E5C2" opacity=".075"/>
+  <circle cx="247" cy="69" r="50" fill="#FF927E" opacity=".105"/>
+  <path d="M54 193 160 132l106 31M76 205l105-61 83 24" fill="none" stroke="#69D9CC" stroke-width="1.5" opacity=".16" stroke-linecap="round"/>
+</g>
+<ellipse cx="160" cy="207" rx="119" ry="15" fill="#103744" opacity=".1"/>
+<g filter="url(#s)"><path d="m43 181 102-59 137 40-102 59Z" fill="#1A414C"/><path d="M43 181v10l137 39v-9Z" fill="#24505A"/><path d="m180 221 102-59v10l-102 58Z" fill="#1D4852"/>
+<path d="M57 65 96 43v119l-39 22Z" fill="#12313D" stroke="#BFE9E5" stroke-width="3"/><path d="M96 43 130 62v119l-34-19Z" fill="#1A414C" stroke="#BFE9E5" stroke-width="3"/>
+<path d="M124 78 163 56v119l-39 22Z" fill="#12313D" stroke="#BFE9E5" stroke-width="3"/><path d="M163 56 197 75v119l-34-19Z" fill="#1A414C" stroke="#BFE9E5" stroke-width="3"/>
+<path d="M191 63 230 41v119l-39 22Z" fill="#103744" stroke="#BFE9E5" stroke-width="3"/><path d="M230 41 264 60v119l-34-19Z" fill="#0C2E3A" stroke="#BFE9E5" stroke-width="3"/>
+<path d="m68 91 18-10 22 12-18 11Z" fill="#78A4FF"/><path d="m68 122 18-10 22 12-18 11Z" fill="#FFCA5E"/><path d="m135 112 18-10 22 12-18 11Z" fill="#9B84FF"/><path d="m135 145 18-10 22 12-18 11Z" fill="#FF927E"/>
+<path d="m204 108 9 9 20-24" fill="none" stroke="#00E5C2" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M130 127h-14M197 130h-14" stroke="#00AFC0" stroke-width="4" stroke-linecap="round"/><path d="m121 121-7 6 7 6m67-9-7 6 7 6" fill="none" stroke="#00AFC0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+<!-- PS Projects · V3 dark · native vector -->
+</svg>

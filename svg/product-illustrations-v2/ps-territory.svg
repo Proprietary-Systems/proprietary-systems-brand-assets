@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-labelledby="t d">
+<title id="t">PS Territory product diorama</title><desc id="d">A dimensional territory map combining boundaries, location intelligence, and a market scorecard.</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00E5C2"/><stop offset="1" stop-color="#0097A7"/></linearGradient><filter id="s" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#0A2030" flood-opacity=".16"/></filter></defs>
+<ellipse cx="160" cy="210" rx="120" ry="16" fill="#0A2030" opacity=".11"/>
+<g filter="url(#s)"><path d="m45 165 75-44 78 24 76-44v58l-76 44-78-24-75 44Z" fill="#0A2030"/><path d="m45 154 75-44 78 24 76-44v58l-76 44-78-24-75 44Z" fill="#F6FBFB" stroke="#0A2030" stroke-width="3" stroke-linejoin="round"/><path d="M120 110v58M198 134v58" stroke="#B7DAD8" stroke-width="2.5"/><path d="m64 155 56-32 78 24 56-33" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/><path d="M121 132c31 0 51 8 77 22v28c-27 8-53 2-78-14Z" fill="#00E5C2" opacity=".45" stroke="#0097A7" stroke-width="2.5" stroke-dasharray="6 4"/>
+<path d="M156 88c0-21 17-38 38-38s38 17 38 38c0 29-38 66-38 66s-38-37-38-66Z" fill="#0A2030"/><circle cx="194" cy="88" r="15" fill="#00E5C2"/>
+<path d="M61 116c0-12 10-22 22-22s22 10 22 22c0 17-22 38-22 38s-22-21-22-38Z" fill="#5B8DEF"/><circle cx="83" cy="116" r="8" fill="#FFFFFF"/>
+<rect x="221" y="42" width="70" height="75" rx="14" fill="#FFFFFF"/><circle cx="244" cy="65" r="14" fill="none" stroke="#7C5CFC" stroke-width="7"/><path d="M244 51a14 14 0 0 1 13 9" fill="none" stroke="#FF7A66" stroke-width="7"/><circle cx="235" cy="91" r="4" fill="#5B8DEF"/><path d="M247 90h28M235 103h40" stroke="#B7DAD8" stroke-width="4" stroke-linecap="round"/></g>
+</svg>

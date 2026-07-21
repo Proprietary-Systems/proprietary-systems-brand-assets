@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" data-illustration-version="3" data-theme="light" shape-rendering="geometricPrecision" viewBox="0 0 320 240" role="img" aria-labelledby="t d">
+<title id="t">PS CRM product diorama</title><desc id="d">Customer records moving through a layered sales pipeline.</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00E5C2"/><stop offset="1" stop-color="#0097A7"/></linearGradient><filter id="s" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="9" stdDeviation="7" flood-color="#0A2030" flood-opacity=".15"/></filter></defs>
+<g aria-hidden="true" class="v3-atmosphere">
+  <ellipse cx="160" cy="205" rx="128" ry="18" fill="#0A2030" opacity=".035"/>
+  <circle cx="247" cy="69" r="47" fill="#5B8DEF" opacity=".055"/>
+  <path d="M54 193 160 132l106 31M76 205l105-61 83 24" fill="none" stroke="#0097A7" stroke-width="1.5" opacity=".09" stroke-linecap="round"/>
+</g>
+<ellipse cx="160" cy="207" rx="121" ry="15" fill="#0A2030" opacity=".11"/>
+<g filter="url(#s)"><path d="M47 185 145 128l132 39-97 57Z" fill="#D9ECEB"/><path d="M47 185v9l133 38v-8Z" fill="#A9CFCD"/><path d="m180 224 97-57v9l-97 56Z" fill="#7FB7B7"/>
+<path d="M67 70 104 49v119l-37 21Z" fill="#FFFFFF" stroke="#0A2030" stroke-width="3" stroke-linejoin="round"/><path d="M104 49 139 68v119l-35-19Z" fill="#00A9AA" stroke="#0A2030" stroke-width="3" stroke-linejoin="round"/>
+<path d="M129 82 166 61v119l-37 21Z" fill="#F6FBFB" stroke="#0A2030" stroke-width="3" stroke-linejoin="round"/><path d="M166 61 201 80v119l-35-19Z" fill="#0A2030" stroke="#0A2030" stroke-width="3" stroke-linejoin="round"/>
+<path d="M191 67 228 46v119l-37 21Z" fill="#FFFFFF" stroke="#0A2030" stroke-width="3" stroke-linejoin="round"/><path d="M228 46 263 65v119l-35-19Z" fill="url(#g)" stroke="#0A2030" stroke-width="3" stroke-linejoin="round"/>
+<path d="M91 91h35M91 111h22M153 104h35M153 124h22M215 87h35M215 107h22" stroke="#B7DAD8" stroke-width="5" stroke-linecap="round"/>
+<circle cx="105" cy="139" r="13" fill="#5B8DEF"/><circle cx="167" cy="151" r="13" fill="#7C5CFC"/><circle cx="229" cy="133" r="13" fill="#FF7A66"/>
+<path d="M118 139h35M180 151h35" stroke="#00E5C2" stroke-width="4" stroke-linecap="round"/><path d="m146 133 8 6-8 6m62 0 8 6-8 6" fill="none" stroke="#00E5C2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+<!-- PS CRM · V3 light · native vector -->
+</svg>

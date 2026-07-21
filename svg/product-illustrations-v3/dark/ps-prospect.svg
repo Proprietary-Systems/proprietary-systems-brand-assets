@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" data-illustration-version="3" data-theme="dark" shape-rendering="geometricPrecision" viewBox="0 0 320 240" role="img" aria-labelledby="t d">
+<title id="t">PS Prospect product diorama</title><desc id="d">A spatial prospect radar surfacing a high-intent contact.</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00E5C2"/><stop offset="1" stop-color="#00AFC0"/></linearGradient><filter id="s" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="9" stdDeviation="7" flood-color="#000A10" flood-opacity=".32"/></filter></defs>
+<g aria-hidden="true" class="v3-atmosphere">
+  <ellipse cx="160" cy="205" rx="130" ry="19" fill="#00E5C2" opacity=".075"/>
+  <circle cx="247" cy="69" r="50" fill="#78A4FF" opacity=".105"/>
+  <path d="M54 193 160 132l106 31M76 205l105-61 83 24" fill="none" stroke="#69D9CC" stroke-width="1.5" opacity=".16" stroke-linecap="round"/>
+</g>
+<ellipse cx="151" cy="202" rx="110" ry="17" fill="#103744" opacity=".11"/>
+<g filter="url(#s)"><ellipse cx="139" cy="143" rx="91" ry="48" fill="#103744"/><path d="M48 137v12c0 27 41 49 91 49s91-22 91-49v-12Z" fill="#0C2E3A"/><ellipse cx="139" cy="137" rx="91" ry="48" fill="#12313D" stroke="#BFE9E5" stroke-width="3"/><ellipse cx="139" cy="137" rx="65" ry="34" fill="none" stroke="#6EA8A6" stroke-width="3"/><ellipse cx="139" cy="137" rx="38" ry="20" fill="none" stroke="#6EA8A6" stroke-width="3"/><path d="m139 137 68-21c8 11 9 26 1 38Z" fill="#00E5C2" opacity=".45"/><path d="m139 137 68-21" stroke="#00AFC0" stroke-width="4" stroke-linecap="round"/><circle cx="139" cy="137" r="7" fill="#103744"/><circle cx="193" cy="120" r="9" fill="#FF927E" stroke="#EAFBF8" stroke-width="4"/><circle cx="104" cy="151" r="7" fill="#78A4FF"/>
+<circle cx="223" cy="82" r="42" fill="#163845" stroke="#BFE9E5" stroke-width="3"/><circle cx="223" cy="71" r="14" fill="url(#g)"/><path d="M197 105c5-18 16-27 26-27s21 9 26 27" fill="#103744"/><path d="m251 112 22 22" stroke="#BFE9E5" stroke-width="9" stroke-linecap="round"/>
+<rect x="42" y="54" width="77" height="46" rx="14" fill="#103744"/><circle cx="59" cy="77" r="7" fill="#00E5C2"/><path d="M74 70h29M74 82h21" stroke="#EAFBF8" stroke-width="3" stroke-linecap="round"/></g>
+<!-- PS Prospect · V3 dark · native vector -->
+</svg>

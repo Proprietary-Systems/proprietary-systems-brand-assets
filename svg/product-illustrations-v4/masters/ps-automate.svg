@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc" data-illustration-version="4" data-theme="master" shape-rendering="geometricPrecision">
+<title id="title">PS Automate flat-object product icon</title><desc id="desc">workflow triggers and connected actions, represented by lightning between linked nodes.</desc>
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0A2030" flood-opacity=".12"/></filter></defs>
+<g filter="url(#shadow)">
+<path d="M53 81v-19c0-15 12-27 27-27h27M203 175v19c0 15-12 27-27 27h-27" fill="none" stroke="#00E5C2" stroke-width="8" stroke-linecap="round"/>
+<circle cx="51" cy="108" r="17" fill="#FFFFFF" stroke="#0097A7" stroke-width="8"/><circle cx="205" cy="148" r="17" fill="#FFFFFF" stroke="#0097A7" stroke-width="8"/>
+<path d="m137 27-53 101h45l-15 101 62-119h-48Z" fill="#0A2030"/></g>
+</svg>

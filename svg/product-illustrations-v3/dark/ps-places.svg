@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" data-illustration-version="3" data-theme="dark" shape-rendering="geometricPrecision" viewBox="0 0 320 240" role="img" aria-labelledby="t d">
+<title id="t">Proprietary Places product diorama</title><desc id="d">A spatial intelligence map with property towers, a selected place, and an analytical property card.</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00E5C2"/><stop offset="1" stop-color="#00AFC0"/></linearGradient><filter id="s" x="-30%" y="-30%" width="160%" height="175%"><feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#000A10" flood-opacity=".34"/></filter></defs>
+<g aria-hidden="true" class="v3-atmosphere">
+  <ellipse cx="160" cy="205" rx="130" ry="19" fill="#00E5C2" opacity=".075"/>
+  <circle cx="247" cy="69" r="50" fill="#00E5C2" opacity=".105"/>
+  <path d="M54 193 160 132l106 31M76 205l105-61 83 24" fill="none" stroke="#69D9CC" stroke-width="1.5" opacity=".16" stroke-linecap="round"/>
+</g>
+<ellipse cx="158" cy="208" rx="122" ry="15" fill="#103744" opacity=".11"/>
+<g filter="url(#s)">
+  <path d="m40 165 111-64 130 38-112 66Z" fill="#12313D" stroke="#BFE9E5" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M40 165v12l129 38v-10Z" fill="#24505A"/><path d="m169 205 112-66v12l-112 64Z" fill="#1D4852"/>
+  <path d="m64 161 88-51 103 31-88 51Z" fill="#1A414C"/>
+  <path d="m71 158 96-2m-67 20 96-54m-62 66 92-53" fill="none" stroke="#EAFBF8" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+  <path d="M101 145v-38l22-13v38Z" fill="#163845" stroke="#BFE9E5" stroke-width="2.5" stroke-linejoin="round"/><path d="m123 94 18 10v38l-18-10Z" fill="#00AFC0" stroke="#BFE9E5" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M145 132V77l26-15v55Z" fill="#163845" stroke="#BFE9E5" stroke-width="2.5" stroke-linejoin="round"/><path d="m171 62 22 12v55l-22-12Z" fill="url(#g)" stroke="#BFE9E5" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M205 142v-31l19-11v31Z" fill="#163845" stroke="#BFE9E5" stroke-width="2.5" stroke-linejoin="round"/><path d="m224 100 16 9v31l-16-9Z" fill="#78A4FF" stroke="#BFE9E5" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M166 46c-15 0-27 12-27 27 0 23 27 48 27 48s27-25 27-48c0-15-12-27-27-27Z" fill="#FF927E" stroke="#BFE9E5" stroke-width="3" stroke-linejoin="round"/><circle cx="166" cy="73" r="10" fill="#163845"/>
+  <path d="M225 48 282 65v79l-57-17Z" fill="#163845" stroke="#BFE9E5" stroke-width="3" stroke-linejoin="round"/><path d="m282 65 8-5v78l-8 6Z" fill="#1D4852" stroke="#BFE9E5" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="247" cy="81" r="9" fill="#00E5C2"/><path d="M262 81h10m-35 20h34m-34 12h24" stroke="#6EA8A6" stroke-width="5" stroke-linecap="round"/><path d="m239 126 9-8 8 5 13-16" fill="none" stroke="#00AFC0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g><!-- Proprietary Places · V3 dark · native vector -->
+</svg>

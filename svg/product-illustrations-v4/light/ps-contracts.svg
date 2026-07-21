@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc" data-illustration-version="4" data-theme="light" shape-rendering="geometricPrecision">
+<title id="title">PS Contracts flat-object product icon</title><desc id="desc">agreement lifecycle, execution, and legal operations, represented by agreement with governance shield.</desc>
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0A2030" flood-opacity=".12"/></filter></defs>
+<g filter="url(#shadow)">
+<path d="M48 29h103l43 43v142H48Z" fill="#FFFFFF" stroke="#0A2030" stroke-width="5" stroke-linejoin="round"/><path d="M151 29v43h43" fill="#E6F2F2" stroke="#0A2030" stroke-width="5" stroke-linejoin="round"/>
+<path d="M73 91h61M73 116h79M73 141h56" stroke="#0A2030" stroke-width="7" stroke-linecap="round"/>
+<path d="M157 119 222 138v38c0 38-27 61-65 72-38-11-65-34-65-72v-38Z" fill="#0A2030"/>
+<path d="m130 179 18 18 37-44" fill="none" stroke="#00E5C2" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>

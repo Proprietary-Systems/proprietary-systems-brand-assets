@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc" data-illustration-version="4" data-theme="light" shape-rendering="geometricPrecision">
+<title id="title">PS Creatives flat-object product icon</title><desc id="desc">visual design, creative production, and brand assets, represented by creative artboard with a design tool.</desc>
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0A2030" flood-opacity=".12"/></filter></defs>
+<g filter="url(#shadow)">
+<rect x="38" y="38" width="180" height="180" rx="20" fill="#E6F2F2" stroke="#0A2030" stroke-width="5"/>
+<path d="M38 77h180" stroke="#0A2030" stroke-width="9"/><circle cx="58" cy="58" r="5" fill="#00E5C2"/><circle cx="76" cy="58" r="5" fill="#0097A7"/>
+<path d="m85 181 63-82 24 20-63 82-34 8Z" fill="#0097A7"/><path d="m148 99 12-15c5-6 14-7 20-2l8 7c6 5 7 14 2 20l-13 16Z" fill="#0A2030"/>
+<path d="m75 209 34-8-24-20Z" fill="#0A2030"/><path d="M78 111h15M86 103v16M176 165h20M186 155v20" stroke="#00E5C2" stroke-width="7" stroke-linecap="round"/></g>
+</svg>

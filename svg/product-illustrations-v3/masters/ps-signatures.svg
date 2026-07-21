@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-labelledby="t d">
+<title id="t">PS Signatures product diorama</title><desc id="d">A premium email identity card deployed from a brand studio.</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00E5C2"/><stop offset="1" stop-color="#0097A7"/></linearGradient><filter id="s" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#0A2030" flood-opacity=".15"/></filter></defs>
+<ellipse cx="161" cy="207" rx="111" ry="15" fill="#0A2030" opacity=".1"/>
+<g filter="url(#s)"><path d="m55 179 91-53 123 36-91 53Z" fill="#D9ECEB"/><path d="M55 179v10l123 35v-9Z" fill="#A9CFCD"/><path d="m178 215 91-53v10l-91 52Z" fill="#7FB7B7"/>
+<rect x="54" y="48" width="215" height="142" rx="20" fill="#FFFFFF" stroke="#0A2030" stroke-width="3"/><path d="M54 76h215" stroke="#D3E6E6" stroke-width="3"/><circle cx="70" cy="62" r="4" fill="#FF7A66"/><circle cx="84" cy="62" r="4" fill="#F4B740"/><circle cx="98" cy="62" r="4" fill="#00E5C2"/><path d="M72 94h100M72 108h71" stroke="#D3E6E6" stroke-width="4" stroke-linecap="round"/>
+<rect x="70" y="126" width="180" height="45" rx="11" fill="#0A2030"/><rect x="70" y="126" width="8" height="45" rx="4" fill="url(#g)"/><circle cx="100" cy="148" r="15" fill="#00E5C2"/><circle cx="100" cy="143" r="5" fill="#0A2030"/><path d="M90 158c3-7 8-10 10-10s7 3 10 10" fill="#0097A7"/><path d="M124 139h54M124 149h40M124 159h72" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/><rect x="207" y="138" width="30" height="20" rx="10" fill="#0097A7"/><path d="m216 148 4 4 8-10" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M228 47 246 29l18 18-18 18Z" fill="#7C5CFC"/><path d="M246 36v22m-11-11h22" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/></g>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc" data-illustration-version="4" data-theme="dark" shape-rendering="geometricPrecision">
+<title id="title">PS Outreach flat-object product icon</title><desc id="desc">asynchronous engagement, represented by paper plane and message.</desc>
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#000A10" flood-opacity=".28"/></filter></defs>
+<g filter="url(#shadow)">
+<rect x="125" y="96" width="103" height="81" rx="12" fill="#193F4B"/><path d="M154 126h47M154 149h34" stroke="#F6FBFB" stroke-width="8" stroke-linecap="round"/>
+<path d="M31 88 218 34l-66 183-36-75-48 39 16-61Z" fill="#00AFC0"/>
+<path d="m84 120 134-86-102 108" fill="none" stroke="#00E5C2" stroke-width="5" stroke-linejoin="round"/></g>
+</svg>

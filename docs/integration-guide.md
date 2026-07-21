@@ -4,6 +4,8 @@ Use `brand-assets/manifest.json` as the canonical lookup table. The snippets her
 
 For light/dark selection, use `brand-assets/modes.json`.
 
+For application consumption, use `brand-assets/ecosystem/registry.json` for product labels, application routes, navigation groups, technical boundaries, hostnames, and product illustrations. Architecture authors must make topology changes in `architecture/catalog/system.json` first; the control-plane verifier prevents the presentation registry from drifting from it.
+
 | Need | Light mode | Dark mode |
 | --- | --- | --- |
 | Header logo | `brand-assets/svg/primary-horizontal-lockup.svg` | `brand-assets/svg/primary-horizontal-lockup-on-dark.svg` |
@@ -24,6 +26,26 @@ For light/dark selection, use `brand-assets/modes.json`.
 - Use `brand-assets/snippets/product-app-header.html` for dense app headers.
 - Use `brand-assets/svg/icon-only-mark.svg` for compact sidebars, launchers, and pinned navigation.
 - Use app icons from `brand-assets/icons/` for mobile/PWA surfaces.
+- Build launchers and product navigation from `brand-assets/ecosystem/registry.json`.
+- Use the shared `ProductIllustration`, `ProductTile`, and `AppLauncher` React components instead of reconstructing asset paths.
+
+```tsx
+import {
+  AppLauncher,
+  ProductIllustration,
+  ProductTile,
+  ProprietarySystemsLogo,
+} from "@proprietary-systems/brand-assets/react";
+
+<ProprietarySystemsLogo mode="dark" intent="compact" />
+<ProductIllustration productId="ps-crm" mode="dark" />
+<ProductTile productId="ps-projects" mode="light" href="/projects" />
+<AppLauncher mode="light" currentProductId="ps-crm" />
+```
+
+The launcher defaults to a three-column quick-access grid followed by the canonical product groups. Use `availableProductIds` to filter it through tenant entitlements; do not fork the component or maintain a second product map.
+
+Do not use the deprecated `ps-portal` or `peter-studio` names for new work. They resolve to `ps-home` and `ps-creatives` only as compatibility aliases. Use `ps-client-portal` for the external customer-facing portal.
 
 ## Checkout Pages
 
@@ -45,6 +67,8 @@ https://proprietarysystems.ai/brand-assets/png/...
 https://proprietarysystems.ai/brand-assets/icons/...
 https://proprietarysystems.ai/brand-assets/web/site.webmanifest
 ```
+
+The target asset host is `assets.proprietarysystems.ai`; same-origin `/brand-assets` remains the recommended deployment path until that versioned asset host is live.
 
 ## GitHub Reference
 

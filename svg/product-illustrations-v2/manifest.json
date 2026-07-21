@@ -1,0 +1,25 @@
+{
+  "name": "Proprietary Systems Product Dioramas",
+  "version": "2.0.0",
+  "viewBox": "0 0 320 240",
+  "background": "transparent",
+  "preferred": true,
+  "direction": "Clean 2.5D product dioramas",
+  "assets": [
+    { "id": "peter-ai", "label": "Peter.ai", "file": "peter-ai.svg" },
+    { "id": "ps-crm", "label": "PS CRM", "file": "ps-crm.svg" },
+    { "id": "ps-prospect", "label": "PS Prospect", "file": "ps-prospect.svg" },
+    { "id": "ps-outreach", "label": "PS Outreach", "file": "ps-outreach.svg" },
+    { "id": "ps-dialer", "label": "PS Dialer", "file": "ps-dialer.svg" },
+    { "id": "ps-contracts", "label": "PS Contracts", "file": "ps-contracts.svg" },
+    { "id": "ps-signatures", "label": "PS Signatures", "file": "ps-signatures.svg" },
+    { "id": "ps-finance", "label": "PS Finance", "file": "ps-finance.svg" },
+    { "id": "ps-people", "label": "PS People", "file": "ps-people.svg" },
+    { "id": "ps-docs", "label": "PS Docs", "file": "ps-docs.svg" },
+    { "id": "ps-automate", "label": "PS Automate", "file": "ps-automate.svg" },
+    { "id": "ps-sites", "label": "PS Sites", "file": "ps-sites.svg" },
+    { "id": "ps-projects", "label": "PS Projects", "file": "ps-projects.svg" },
+    { "id": "ps-portal", "label": "PS Portal", "file": "ps-portal.svg" },
+    { "id": "ps-territory", "label": "PS Territory", "file": "ps-territory.svg" }
+  ]
+}

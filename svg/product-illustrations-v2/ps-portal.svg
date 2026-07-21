@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-labelledby="t d">
+<title id="t">PS Portal product diorama</title><desc id="d">A secure client room combining identity, shared files, messaging, and approvals.</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00E5C2"/><stop offset="1" stop-color="#0097A7"/></linearGradient><filter id="s" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#0A2030" flood-opacity=".15"/></filter></defs>
+<ellipse cx="160" cy="208" rx="112" ry="15" fill="#0A2030" opacity=".1"/>
+<g filter="url(#s)"><path d="m52 182 96-56 126 37-96 56Z" fill="#D9ECEB"/><path d="M52 182v10l126 36v-9Z" fill="#A9CFCD"/><path d="m178 219 96-56v10l-96 55Z" fill="#7FB7B7"/>
+<rect x="46" y="49" width="224" height="146" rx="20" fill="#FFFFFF" stroke="#0A2030" stroke-width="3"/><rect x="62" y="66" width="66" height="111" rx="14" fill="#0A2030"/><circle cx="95" cy="94" r="17" fill="#00E5C2"/><circle cx="95" cy="88" r="6" fill="#0A2030"/><path d="M84 105c4-8 9-11 11-11s8 3 11 11" fill="#0097A7"/><path d="M78 128h34M78 141h26M78 158h34" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+<path d="M148 80h91M148 96h63" stroke="#B7DAD8" stroke-width="5" stroke-linecap="round"/><path d="M146 133h49l11 11h49v34H146Z" fill="#F4B740"/><path d="M148 116h53v42h-53Z" fill="#FFFFFF" stroke="#0A2030" stroke-width="2.5"/><path d="M158 129h31M158 141h23" stroke="#0097A7" stroke-width="3" stroke-linecap="round"/>
+<circle cx="239" cy="129" r="26" fill="url(#g)"/><path d="m227 129 8 8 17-21" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M230 49V39c0-10 8-18 18-18s18 8 18 18v10" fill="none" stroke="#0A2030" stroke-width="4"/><rect x="225" y="45" width="46" height="34" rx="11" fill="#7C5CFC"/><circle cx="248" cy="61" r="6" fill="#FFFFFF"/></g>
+</svg>

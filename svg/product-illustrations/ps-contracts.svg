@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-labelledby="title desc">
+  <title id="title">PS Contracts product illustration</title>
+  <desc id="desc">A prepared agreement with signature placement and verified completion.</desc>
+  <defs><filter id="s" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#0A2030" flood-opacity=".12"/></filter></defs>
+  <circle cx="160" cy="120" r="98" fill="#E6F2F2"/>
+  <g filter="url(#s)">
+    <path d="M86 34h112l42 42v130H86Z" fill="#FFFFFF" stroke="#0A2030" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M198 34v42h42" fill="#D3E6E6" stroke="#0A2030" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M110 100h92M110 119h92M110 138h66" stroke="#BFDADA" stroke-width="5" stroke-linecap="round"/>
+    <rect x="108" y="156" width="104" height="30" rx="8" fill="#F6FBFB" stroke="#0097A7" stroke-width="3" stroke-dasharray="6 5"/>
+    <path d="M123 174c12-22 20 12 31-9 7-13 10 12 23-4 8-9 13 4 21 2" fill="none" stroke="#0A2030" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M222 112c30 5 48 17 48 17v33c0 22-18 37-48 45-30-8-48-23-48-45v-33s18-12 48-17Z" fill="#0A2030" stroke="#FFFFFF" stroke-width="4"/>
+    <path d="m201 158 14 14 28-34" fill="none" stroke="#00E5C2" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <circle cx="67" cy="66" r="17" fill="#7C5CFC"/><path d="M60 66h14M67 59v14" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+</svg>

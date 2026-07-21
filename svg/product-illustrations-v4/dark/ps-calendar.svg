@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc" data-illustration-version="4" data-theme="dark" shape-rendering="geometricPrecision">
+<title id="title">PS Calendar flat-object product icon</title><desc id="desc">shared scheduling and business time, represented by calendar page with scheduled blocks.</desc>
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#000A10" flood-opacity=".28"/></filter></defs>
+<g filter="url(#shadow)">
+<rect x="39" y="53" width="178" height="168" rx="18" fill="#193F4B" stroke="#DDF4F1" stroke-width="5"/>
+<path d="M39 91h178" stroke="#DDF4F1" stroke-width="10"/><path d="M82 31v42M174 31v42" stroke="#00AFC0" stroke-width="12" stroke-linecap="round"/>
+<g fill="#DDF4F1"><rect x="65" y="116" width="28" height="25" rx="5"/><rect x="106" y="116" width="28" height="25" rx="5"/><rect x="147" y="116" width="28" height="25" rx="5"/></g>
+<rect x="65" y="158" width="69" height="31" rx="7" fill="#00E5C2"/><path d="m77 174 10 10 23-25" fill="none" stroke="#DDF4F1" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>

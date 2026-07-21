@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-labelledby="title desc">
+  <title id="title">PS Finance product illustration</title>
+  <desc id="desc">A finance workbook combining a ledger, forecast chart, and cash signals.</desc>
+  <defs><filter id="s" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#0A2030" flood-opacity=".12"/></filter></defs>
+  <circle cx="160" cy="120" r="98" fill="#E6F2F2"/>
+  <g filter="url(#s)">
+    <rect x="44" y="43" width="232" height="156" rx="22" fill="#FFFFFF" stroke="#0A2030" stroke-width="4"/>
+    <rect x="62" y="63" width="91" height="117" rx="12" fill="#F6FBFB" stroke="#D3E6E6" stroke-width="3"/>
+    <path d="M62 91h91M62 119h91M62 147h91M91 63v117" stroke="#BFDADA" stroke-width="2.5"/>
+    <path d="M70 77h13M99 77h38M70 105h13M99 105h26M70 133h13M99 133h42M70 161h13M99 161h31" stroke="#0A2030" stroke-width="3" stroke-linecap="round"/>
+    <rect x="169" y="63" width="89" height="79" rx="12" fill="#0A2030"/>
+    <path d="M184 126v-25h12v25m9 0V88h12v38m9 0V75h12v51" fill="#00E5C2"/>
+    <path d="m181 98 20-15 17 8 26-23" fill="none" stroke="#5B8DEF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="169" y="154" width="89" height="26" rx="13" fill="#0097A7"/>
+    <circle cx="186" cy="167" r="7" fill="#FFFFFF"/><path d="M201 162h43M201 171h29" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <circle cx="268" cy="175" r="25" fill="#F4B740" stroke="#0A2030" stroke-width="4"/>
+  <path d="M268 160v30m8-24c0-5-4-8-9-8s-9 3-9 8c0 11 18 5 18 16 0 5-4 8-9 8s-9-3-9-8" fill="none" stroke="#0A2030" stroke-width="3" stroke-linecap="round"/>
+</svg>

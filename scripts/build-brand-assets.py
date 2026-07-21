@@ -624,9 +624,13 @@ def write_fidelity_preview() -> None:
     current_render_path = DIRS["preview"] / "current-traced-icon-mark.png"
     comparison_path = DIRS["preview"] / "mark-fidelity-comparison.png"
 
-    if REFERENCE_IMAGE.exists():
-        reference = Image.open(REFERENCE_IMAGE).convert("RGB")
-        reference.crop((1130, 85, 1320, 235)).resize((760, 600), Image.Resampling.LANCZOS).save(reference_crop_path)
+    retained_reference = DIRS["reference"] / "proprietary-systems-logo-spec.jpg"
+    reference_source = REFERENCE_IMAGE if REFERENCE_IMAGE.exists() else retained_reference
+    try:
+        reference = Image.open(reference_source).convert("RGB")
+    except PermissionError:
+        reference = Image.open(retained_reference).convert("RGB")
+    reference.crop((1130, 85, 1320, 235)).resize((760, 600), Image.Resampling.LANCZOS).save(reference_crop_path)
 
     current_render_svg.write_text(
         svg_shell(
@@ -699,6 +703,7 @@ def write_manifest() -> None:
             "rawBase": "https://raw.githubusercontent.com/Proprietary-Systems/proprietary-systems-brand-assets/main",
         },
         "generatedFrom": "brand-assets/scripts/build-brand-assets.py",
+        "ecosystemRegistry": "brand-assets/ecosystem/registry.json",
         "reference": "brand-assets/reference/proprietary-systems-logo-spec.jpg",
         "colors": COLORS,
         "typography": {
@@ -715,9 +720,20 @@ def write_manifest() -> None:
         "qualityChecks": {
             "logoSystemPreview": "brand-assets/preview/proprietary-systems-logo-system-preview.png",
             "markFidelityComparison": "brand-assets/preview/mark-fidelity-comparison.png",
+            "productIconContactSheet": "brand-assets/preview/product-illustrations-v4-light-contact-sheet.png",
+            "productIconDarkContactSheet": "brand-assets/preview/product-illustrations-v4-dark-contact-sheet.png",
+            "productIconLegibility": "brand-assets/preview/product-illustrations-v4-48px-legibility.png",
+            "productDioramaContactSheet": "brand-assets/preview/product-illustrations-v3-light-contact-sheet.png",
+            "productDioramaDarkContactSheet": "brand-assets/preview/product-illustrations-v3-dark-contact-sheet.png",
+            "productDioramaThemeComparison": "brand-assets/preview/product-illustrations-v3-theme-comparison.png",
         },
         "sharedComponents": {
-            "react": "brand-assets/components/ProprietarySystemsLogo.tsx",
+            "react": "brand-assets/components/index.ts",
+            "logo": "brand-assets/components/ProprietarySystemsLogo.tsx",
+            "productIllustration": "brand-assets/components/ProductIllustration.tsx",
+            "productTile": "brand-assets/components/ProductTile.tsx",
+            "appLauncher": "brand-assets/components/AppLauncher.tsx",
+            "productCatalog": "brand-assets/components/productIllustrationCatalog.ts",
             "package": "brand-assets/package.json",
         },
         "integrationTemplates": {
@@ -734,6 +750,12 @@ def write_manifest() -> None:
             "emailSignatureCompact": "brand-assets/email/signature-compact.html",
             "integrationGuide": "brand-assets/docs/integration-guide.md",
             "agentPrompt": "brand-assets/docs/agent-prompt.md",
+            "ecosystemRegistry": "brand-assets/ecosystem/registry.json",
+            "productIllustrations": "brand-assets/svg/product-illustrations-v4/manifest.json",
+            "productIllustrationsV3": "brand-assets/svg/product-illustrations-v3/manifest.json",
+            "productIllustrationsV2": "brand-assets/svg/product-illustrations-v2/manifest.json",
+            "productIllustrationsLegacy": "brand-assets/svg/product-illustrations/manifest.json",
+            "appLauncherPreview": "brand-assets/preview/app-launcher/index.html",
         },
         "modeAliases": mode_aliases,
         "variants": {
@@ -796,6 +818,11 @@ def write_manifest() -> None:
                 "circle1024": "brand-assets/icons/app-icon-circle-1024.png",
                 "tags": ["app-icon", "favicon", "mode-independent", "social-avatar"],
             },
+            "appLauncherTrigger": {
+                "light": "brand-assets/svg/app-launcher-grid-light.svg",
+                "dark": "brand-assets/svg/app-launcher-grid-dark.svg",
+                "tags": ["application-launcher", "nine-dot-grid", "light-mode", "dark-mode"],
+            },
         },
         "applications": {
             "stripe": {
@@ -810,6 +837,8 @@ def write_manifest() -> None:
                 "pwaIcon192": "brand-assets/icons/app-icon-dark-192.png",
                 "pwaIcon512": "brand-assets/icons/app-icon-dark-512.png",
                 "appleTouchIcon": "brand-assets/icons/app-icon-dark-180.png",
+                "launcherTriggerLight": "brand-assets/svg/app-launcher-grid-light.svg",
+                "launcherTriggerDark": "brand-assets/svg/app-launcher-grid-dark.svg",
             },
             "githubOrgOrSocialProfile": {
                 "avatar": "brand-assets/icons/app-icon-dark-1024.png",
@@ -820,6 +849,16 @@ def write_manifest() -> None:
                 "whiteOnDark": "brand-assets/svg/monochrome-white-horizontal.svg",
                 "stacked": "brand-assets/svg/stacked-logo.svg",
             },
+            "productTiles": {
+                "manifest": "brand-assets/svg/product-illustrations-v4/manifest.json",
+                "preview": "brand-assets/svg/product-illustrations-v4/preview.html",
+                "assetDirectory": "brand-assets/svg/product-illustrations-v4",
+                "lightDirectory": "brand-assets/svg/product-illustrations-v4/light",
+                "darkDirectory": "brand-assets/svg/product-illustrations-v4/dark",
+                "v3Manifest": "brand-assets/svg/product-illustrations-v3/manifest.json",
+                "v2Manifest": "brand-assets/svg/product-illustrations-v2/manifest.json",
+                "legacyManifest": "brand-assets/svg/product-illustrations/manifest.json",
+            },
         },
     }
     (ROOT / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
@@ -828,7 +867,31 @@ def write_manifest() -> None:
 
 def copy_reference() -> None:
     if REFERENCE_IMAGE.exists():
-        shutil.copy2(REFERENCE_IMAGE, DIRS["reference"] / "proprietary-systems-logo-spec.jpg")
+        destination = DIRS["reference"] / "proprietary-systems-logo-spec.jpg"
+        try:
+            shutil.copy2(REFERENCE_IMAGE, destination)
+        except PermissionError:
+            if not destination.exists():
+                raise
+            print(f"Skipped inaccessible source reference; retained {destination}")
+
+
+def build_product_illustrations() -> None:
+    subprocess.run(
+        [str(ROOT / ".venv" / "bin" / "python"), str(ROOT / "scripts" / "build-product-illustrations-v4.py")],
+        check=True,
+    )
+    subprocess.run(
+        [str(ROOT / ".venv" / "bin" / "python"), str(ROOT / "scripts" / "build-product-illustrations-v3.py")],
+        check=True,
+    )
+
+
+def validate_ecosystem() -> None:
+    subprocess.run(
+        [str(ROOT / ".venv" / "bin" / "python"), str(ROOT / "scripts" / "validate-ecosystem.py")],
+        check=True,
+    )
 
 
 def main() -> None:
@@ -838,7 +901,9 @@ def main() -> None:
     write_pngs()
     write_preview()
     write_fidelity_preview()
+    build_product_illustrations()
     write_manifest()
+    validate_ecosystem()
     print(f"Generated Proprietary Systems brand assets in {ROOT}")
 
 

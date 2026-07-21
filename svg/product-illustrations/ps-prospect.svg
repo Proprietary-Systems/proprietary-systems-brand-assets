@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-labelledby="title desc">
+  <title id="title">PS Prospect product illustration</title>
+  <desc id="desc">A prospect radar finding high-intent companies and contacts.</desc>
+  <defs><filter id="s" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#0A2030" flood-opacity=".12"/></filter></defs>
+  <circle cx="160" cy="120" r="98" fill="#E6F2F2"/>
+  <g filter="url(#s)">
+    <circle cx="145" cy="116" r="72" fill="#FFFFFF" stroke="#0A2030" stroke-width="4"/>
+    <circle cx="145" cy="116" r="48" fill="none" stroke="#BFDADA" stroke-width="3"/>
+    <circle cx="145" cy="116" r="24" fill="none" stroke="#BFDADA" stroke-width="3"/>
+    <path d="M145 44v144M73 116h144M94 65l102 102M196 65 94 167" stroke="#D3E6E6" stroke-width="2"/>
+    <path d="M145 116 195 79a62 62 0 0 1 12 37Z" fill="#00E5C2" fill-opacity=".32"/>
+    <path d="M145 116 195 79" stroke="#0097A7" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="145" cy="116" r="8" fill="#0A2030"/>
+    <circle cx="189" cy="86" r="9" fill="#FF7A66" stroke="#FFFFFF" stroke-width="4"/>
+    <circle cx="107" cy="144" r="7" fill="#5B8DEF" stroke="#FFFFFF" stroke-width="3"/>
+    <circle cx="166" cy="157" r="6" fill="#F4B740" stroke="#FFFFFF" stroke-width="3"/>
+    <circle cx="216" cy="170" r="34" fill="#FFFFFF" stroke="#0A2030" stroke-width="4"/>
+    <circle cx="207" cy="162" r="11" fill="#00E5C2"/>
+    <path d="M188 183c4-12 14-18 25-18s20 6 25 18" fill="#0097A7"/>
+    <path d="m238 193 20 18" stroke="#0A2030" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <rect x="234" y="48" width="52" height="34" rx="12" fill="#0A2030"/>
+  <path d="m248 66 7 7 15-16" fill="none" stroke="#00E5C2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

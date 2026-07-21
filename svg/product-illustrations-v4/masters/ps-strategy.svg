@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc" data-illustration-version="4" data-theme="master" shape-rendering="geometricPrecision">
+<title id="title">PS Strategy flat-object product icon</title><desc id="desc">strategic planning and decision coordination, represented by compass over a planning field.</desc>
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0A2030" flood-opacity=".12"/></filter></defs>
+<g filter="url(#shadow)">
+<circle cx="128" cy="128" r="91" fill="#E6F2F2" stroke="#0A2030" stroke-width="7"/>
+<circle cx="128" cy="128" r="59" fill="#FFFFFF" stroke="#0097A7" stroke-width="6"/>
+<path d="m155 91-15 50-50 15 15-50Z" fill="#0097A7"/><path d="m105 106 35 35-50 15Z" fill="#0A2030"/>
+<circle cx="128" cy="128" r="8" fill="#00E5C2"/><path d="M128 26v18M128 212v18M26 128h18M212 128h18" stroke="#0A2030" stroke-width="7" stroke-linecap="round"/></g>
+</svg>
