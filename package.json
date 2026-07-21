@@ -15,7 +15,7 @@
     "verify:react": "tsc --noEmit -p tsconfig.json",
     "verify:tools": "rsvg-convert --version && potrace --version && magick -version",
     "verify:assets": "magick identify png/primary-horizontal-lockup-on-dark.png icons/favicon.ico ../stripe-brand-assets/ps-stripe-logo-horizontal.png",
-    "verify:ecosystem": "./.venv/bin/python scripts/validate-ecosystem.py"
+    "verify:ecosystem": "python3 scripts/validate-ecosystem.py"
   },
   "exports": {
     "./manifest": "./manifest.json",
