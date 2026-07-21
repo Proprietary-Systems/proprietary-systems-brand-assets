@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc" data-illustration-version="4" data-theme="light" shape-rendering="geometricPrecision">
+<title id="title">PS Finance flat-object product icon</title><desc id="desc">financial planning, forecasting, and performance, represented by growth bars and trend line.</desc>
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0A2030" flood-opacity=".12"/></filter></defs>
+<g filter="url(#shadow)">
+<rect x="45" y="155" width="28" height="62" rx="5" fill="#0A2030"/><rect x="91" y="130" width="28" height="87" rx="5" fill="#0A2030"/><rect x="137" y="104" width="28" height="113" rx="5" fill="#0A2030"/><rect x="183" y="71" width="28" height="146" rx="5" fill="#0A2030"/>
+<path d="m49 131 50-43 42 23 68-66" fill="none" stroke="#00E5C2" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><circle cx="49" cy="131" r="9" fill="#0097A7"/><circle cx="99" cy="88" r="9" fill="#0097A7"/><circle cx="141" cy="111" r="9" fill="#0097A7"/><circle cx="209" cy="45" r="9" fill="#0097A7"/></g>
+</svg>

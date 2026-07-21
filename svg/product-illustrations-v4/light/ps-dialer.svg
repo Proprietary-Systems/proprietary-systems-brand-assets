@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc" data-illustration-version="4" data-theme="light" shape-rendering="geometricPrecision">
+<title id="title">PS Dialer flat-object product icon</title><desc id="desc">live calling, represented by telephone handset and keypad.</desc>
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0A2030" flood-opacity=".12"/></filter></defs>
+<g filter="url(#shadow)">
+<rect x="119" y="85" width="105" height="116" rx="14" fill="#E6F2F2"/>
+<g fill="#0097A7"><circle cx="153" cy="119" r="7"/><circle cx="177" cy="119" r="7"/><circle cx="201" cy="119" r="7"/><circle cx="153" cy="145" r="7"/><circle cx="177" cy="145" r="7"/><circle cx="201" cy="145" r="7"/><circle cx="153" cy="171" r="7"/><circle cx="177" cy="171" r="7"/><circle cx="201" cy="171" r="7"/></g>
+<path d="M65 31c-13 5-25 12-34 21-5 5-7 13-5 20 20 76 79 135 155 155 7 2 15 0 20-5 9-9 16-21 21-34l-47-37-25 24c-31-15-54-38-69-69l24-25Z" fill="#0A2030"/></g>
+</svg>

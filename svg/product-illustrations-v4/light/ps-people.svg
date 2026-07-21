@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc" data-illustration-version="4" data-theme="light" shape-rendering="geometricPrecision">
+<title id="title">PS People flat-object product icon</title><desc id="desc">internal organizational structure and people operations, represented by organization hierarchy.</desc>
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0A2030" flood-opacity=".12"/></filter></defs>
+<g filter="url(#shadow)">
+<rect x="69" y="25" width="118" height="69" rx="11" fill="#0097A7"/>
+<circle cx="102" cy="53" r="13" fill="#FFFFFF"/><path d="M84 82c3-15 9-23 18-23s15 8 18 23Z" fill="#FFFFFF"/><path d="M132 50h33M132 70h25" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+<path d="M128 94v46M52 140h152M52 140v31M128 140v31M204 140v31" fill="none" stroke="#0A2030" stroke-width="6" stroke-linecap="round"/>
+<circle cx="52" cy="195" r="22" fill="#00E5C2"/><circle cx="128" cy="195" r="22" fill="#0A2030"/><circle cx="204" cy="195" r="22" fill="#0097A7"/><g fill="#FFFFFF"><circle cx="52" cy="189" r="7"/><circle cx="128" cy="189" r="7"/><circle cx="204" cy="189" r="7"/></g></g>
+</svg>

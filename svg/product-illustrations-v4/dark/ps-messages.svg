@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc" data-illustration-version="4" data-theme="dark" shape-rendering="geometricPrecision">
+<title id="title">PS Messages flat-object product icon</title><desc id="desc">internal and contextual business messaging, represented by overlapping conversation bubbles.</desc>
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#000A10" flood-opacity=".28"/></filter></defs>
+<g filter="url(#shadow)">
+<path d="M42 46h132c13 0 23 10 23 23v72c0 13-10 23-23 23h-67l-39 30 8-30H42c-13 0-23-10-23-23V69c0-13 10-23 23-23Z" fill="#193F4B" stroke="#DDF4F1" stroke-width="5"/>
+<path d="M99 104h112c14 0 26 12 26 26v54c0 14-12 26-26 26h-28l8 26-36-26H99c-14 0-26-12-26-26v-54c0-14 12-26 26-26Z" fill="#00AFC0"/>
+<path d="M105 139h98M105 164h72" stroke="#F6FBFB" stroke-width="8" stroke-linecap="round"/><circle cx="62" cy="91" r="9" fill="#00E5C2"/><circle cx="91" cy="91" r="9" fill="#00AFC0"/><circle cx="120" cy="91" r="9" fill="#DDF4F1"/></g>
+</svg>

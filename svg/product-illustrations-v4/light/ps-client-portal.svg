@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc" data-illustration-version="4" data-theme="light" shape-rendering="geometricPrecision">
+<title id="title">Client Portal flat-object product icon</title><desc id="desc">external customer onboarding and collaboration, represented by customer profile inside a portal window.</desc>
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0A2030" flood-opacity=".12"/></filter></defs>
+<g filter="url(#shadow)">
+<rect x="33" y="44" width="190" height="167" rx="18" fill="#E6F2F2" stroke="#0A2030" stroke-width="5"/>
+<path d="M33 79h190" stroke="#0A2030" stroke-width="10"/><circle cx="55" cy="61" r="5" fill="#00E5C2"/><circle cx="73" cy="61" r="5" fill="#0097A7"/>
+<circle cx="104" cy="125" r="24" fill="#0097A7"/><path d="M66 183c5-30 18-45 38-45s33 15 38 45Z" fill="#0097A7"/>
+<path d="M165 112h31M165 139h31M165 166h22" stroke="#0A2030" stroke-width="8" stroke-linecap="round"/></g>
+</svg>

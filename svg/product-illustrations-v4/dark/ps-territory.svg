@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc" data-illustration-version="4" data-theme="dark" shape-rendering="geometricPrecision">
+<title id="title">PS Territory flat-object product icon</title><desc id="desc">operational geographic coverage, represented by route across a folded map.</desc>
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#000A10" flood-opacity=".28"/></filter></defs>
+<g filter="url(#shadow)">
+<path d="m28 61 63-26 74 27 63-27v160l-63 26-74-27-63 27Z" fill="#193F4B" stroke="#DDF4F1" stroke-width="5" stroke-linejoin="round"/>
+<path d="M91 35v159M165 62v159" stroke="#F6FBFB" stroke-width="6"/>
+<path d="M53 174c39-47 60-15 87-52 25-34 38-17 60-51" fill="none" stroke="#DDF4F1" stroke-width="7" stroke-dasharray="11 13" stroke-linecap="round"/>
+<circle cx="53" cy="174" r="12" fill="#DDF4F1"/><circle cx="200" cy="71" r="13" fill="#103744" stroke="#00AFC0" stroke-width="7"/></g>
+</svg>

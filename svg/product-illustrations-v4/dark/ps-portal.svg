@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc" data-illustration-version="4" data-theme="dark" shape-rendering="geometricPrecision">
+<title id="title">PS Home (legacy ps-portal alias) flat-object product icon</title><desc id="desc">unified application access and business command center, represented by four-panel application gateway.</desc>
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#000A10" flood-opacity=".28"/></filter></defs>
+<g filter="url(#shadow)">
+<path d="M38 47 104 69v69l-66-9Z" fill="#DDF4F1"/><path d="M38 145 104 137v69l-66 22Z" fill="#DDF4F1"/>
+<path d="m218 47-66 22v69l66-9Z" fill="#00AFC0"/><path d="m218 145-66-8v69l66 22Z" fill="#00AFC0"/>
+<path d="M116 77h24v121h-24Z" fill="#193F4B"/></g>
+</svg>

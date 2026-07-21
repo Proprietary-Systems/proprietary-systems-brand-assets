@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-labelledby="t d">
+<title id="t">PS Finance product diorama</title><desc id="d">A financial forecast diorama with a growth wall, allocation chart, and performance bars.</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00E5C2"/><stop offset="1" stop-color="#0097A7"/></linearGradient><filter id="s" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#0A2030" flood-opacity=".16"/></filter></defs>
+<ellipse cx="160" cy="210" rx="120" ry="15" fill="#0A2030" opacity=".11"/>
+<g filter="url(#s)"><path d="m52 186 105-61 115 35-104 61Z" fill="#FFFFFF"/><path d="M52 186v10l116 34v-9Z" fill="#B7DAD8"/><path d="m168 221 104-61v10l-104 60Z" fill="#7FB7B7"/>
+<path d="m69 74 154-42v113L69 187Z" fill="#0A2030"/><path d="m223 32 16 10v113l-16-10Z" fill="#052F3B"/><path d="m86 153 23-32 22 13 24-38 23 15 33-49" fill="none" stroke="#00E5C2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="m206 63 12-17 3 21Z" fill="#00E5C2"/>
+<path d="M109 122v32M131 134v20M155 96v58M178 111v43M211 62v92" stroke="#FFFFFF" stroke-opacity=".35" stroke-width="2" stroke-dasharray="4 5"/><circle cx="109" cy="121" r="5" fill="#FFFFFF"/><circle cx="131" cy="134" r="5" fill="#FFFFFF"/><circle cx="155" cy="96" r="5" fill="#FFFFFF"/><circle cx="178" cy="111" r="5" fill="#FFFFFF"/>
+<path d="M94 174c0-26 21-47 47-47v47Z" fill="#00A9AA"/><path d="M141 127c16 0 31 8 40 20l-40 27Z" fill="#7C5CFC"/><path d="M181 147c6 8 9 17 9 27h-49Z" fill="#FF7A66"/><path d="M190 174c0 27-22 49-49 49s-47-22-47-49Z" fill="#073947"/>
+<path d="M213 190v-25h14v25m8 0v-42h14v42m8 0v-62h14v62" fill="url(#g)"/><path d="M227 165v8m22-25v8m22-28v8" stroke="#FFFFFF" stroke-width="2"/></g>
+</svg>

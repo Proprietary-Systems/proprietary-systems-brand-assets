@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc" data-illustration-version="4" data-theme="dark" shape-rendering="geometricPrecision">
+<title id="title">PS Email Signatures (legacy ps-signatures alias) flat-object product icon</title><desc id="desc">employee email-signature design, assignment, deployment, and campaign management, represented by email composer with a branded employee signature card.</desc>
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#000A10" flood-opacity=".28"/></filter></defs>
+<g filter="url(#shadow)">
+<rect x="31" y="43" width="194" height="170" rx="18" fill="#193F4B" stroke="#DDF4F1" stroke-width="5"/>
+<path d="M31 78h194" stroke="#DDF4F1" stroke-width="10"/><circle cx="53" cy="60" r="5" fill="#00E5C2"/><circle cx="71" cy="60" r="5" fill="#00AFC0"/>
+<path d="M57 101h103M57 122h78" stroke="#DDF4F1" stroke-width="7" stroke-linecap="round"/>
+<rect x="55" y="143" width="146" height="48" rx="10" fill="#00AFC0"/>
+<circle cx="80" cy="167" r="15" fill="#F6FBFB"/><path d="M106 158h66M106 176h45" stroke="#F6FBFB" stroke-width="7" stroke-linecap="round"/>
+<path d="m184 151 7 8 10-13" fill="none" stroke="#00E5C2" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>

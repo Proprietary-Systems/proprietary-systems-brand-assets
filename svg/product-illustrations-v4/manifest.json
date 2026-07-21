@@ -1,0 +1,490 @@
+{
+  "name": "Proprietary Systems Flat-Object Product Icons",
+  "version": "4.2.0",
+  "taxonomyVersion": "2.1.0",
+  "ecosystemRegistry": "../../ecosystem/registry.json",
+  "viewBox": "0 0 256 256",
+  "preferred": true,
+  "direction": "One literal flat-object metaphor per product",
+  "semanticRules": [
+    "Product meaning precedes decoration.",
+    "One primary object and at most one semantic modifier.",
+    "External relationships, internal people, and new-person discovery must remain distinct.",
+    "Asynchronous outreach and live calling must remain distinct.",
+    "Agreement execution and employee email-signature management must remain distinct.",
+    "Document authoring and coordinated work must remain distinct.",
+    "Internal application access and external client collaboration must remain distinct.",
+    "Spreadsheet modeling, executive analytics, and financial planning must remain distinct.",
+    "Operational territory and property intelligence must remain distinct.",
+    "Creative production, website publishing, and generic document authoring must remain distinct."
+  ],
+  "products": [
+    {
+      "id": "ps-home",
+      "label": "PS Home",
+      "productClass": "suite-home",
+      "category": "platform",
+      "technicalBoundary": "platform-layer",
+      "defaultRoute": "/",
+      "marketingPath": "/platform",
+      "definition": "unified application access and business command center",
+      "metaphor": "four-panel application gateway",
+      "excludes": [
+        "external client collaboration",
+        "website publishing"
+      ],
+      "master": "masters/ps-home.svg",
+      "variants": {
+        "light": "light/ps-home.svg",
+        "dark": "dark/ps-home.svg"
+      }
+    },
+    {
+      "id": "peter-ai",
+      "label": "PS.AI",
+      "productClass": "suite-module",
+      "category": "platform",
+      "technicalBoundary": "platform-layer",
+      "defaultRoute": "/ps-ai",
+      "marketingPath": "/products/peter-ai",
+      "definition": "contextual customer assistant for conversation and policy-authorized business actions; product development remains in separately trusted internal Codex workflows",
+      "metaphor": "Proprietary Systems mark framing one calm assistant conversation",
+      "excludes": [
+        "generic automation",
+        "human employee records",
+        "source-code development tools"
+      ],
+      "master": "masters/peter-ai.svg",
+      "variants": {
+        "light": "light/peter-ai.svg",
+        "dark": "dark/peter-ai.svg"
+      }
+    },
+    {
+      "id": "ps-crm",
+      "label": "PS CRM",
+      "productClass": "suite-module",
+      "category": "revenue",
+      "technicalBoundary": "platform-module",
+      "defaultRoute": "/crm",
+      "marketingPath": "/products/crm",
+      "definition": "managed external relationships",
+      "metaphor": "external contact record",
+      "excludes": [
+        "internal organizational structure",
+        "new-person discovery"
+      ],
+      "master": "masters/ps-crm.svg",
+      "variants": {
+        "light": "light/ps-crm.svg",
+        "dark": "dark/ps-crm.svg"
+      }
+    },
+    {
+      "id": "ps-prospect",
+      "label": "PS Prospect",
+      "productClass": "suite-module",
+      "category": "revenue",
+      "technicalBoundary": "platform-module",
+      "defaultRoute": "/prospect",
+      "marketingPath": "/products/prospect",
+      "definition": "person and company discovery",
+      "metaphor": "person inside a search lens",
+      "excludes": [
+        "managed account records",
+        "engagement sequences"
+      ],
+      "master": "masters/ps-prospect.svg",
+      "variants": {
+        "light": "light/ps-prospect.svg",
+        "dark": "dark/ps-prospect.svg"
+      }
+    },
+    {
+      "id": "ps-outreach",
+      "label": "PS Outreach",
+      "productClass": "suite-module",
+      "category": "revenue",
+      "technicalBoundary": "platform-module",
+      "defaultRoute": "/outreach",
+      "marketingPath": "/products/outreach",
+      "definition": "asynchronous engagement",
+      "metaphor": "paper plane and message",
+      "excludes": [
+        "live calling",
+        "prospect discovery"
+      ],
+      "master": "masters/ps-outreach.svg",
+      "variants": {
+        "light": "light/ps-outreach.svg",
+        "dark": "dark/ps-outreach.svg"
+      }
+    },
+    {
+      "id": "ps-dialer",
+      "label": "PS Dialer",
+      "productClass": "suite-module",
+      "category": "revenue",
+      "technicalBoundary": "specialized-data-plane",
+      "defaultRoute": "/dialer",
+      "marketingPath": "/products/dialer",
+      "definition": "live calling",
+      "metaphor": "telephone handset and keypad",
+      "excludes": [
+        "asynchronous engagement",
+        "internal messaging"
+      ],
+      "master": "masters/ps-dialer.svg",
+      "variants": {
+        "light": "light/ps-dialer.svg",
+        "dark": "dark/ps-dialer.svg"
+      }
+    },
+    {
+      "id": "ps-contracts",
+      "label": "PS Contracts",
+      "productClass": "suite-module",
+      "category": "agreements",
+      "technicalBoundary": "platform-module",
+      "defaultRoute": "/contracts",
+      "marketingPath": "/products/contracts",
+      "definition": "agreement lifecycle, execution, and legal operations",
+      "metaphor": "agreement with governance shield",
+      "excludes": [
+        "employee email-signature management",
+        "generic document authoring"
+      ],
+      "master": "masters/ps-contracts.svg",
+      "variants": {
+        "light": "light/ps-contracts.svg",
+        "dark": "dark/ps-contracts.svg"
+      }
+    },
+    {
+      "id": "ps-projects",
+      "label": "PS Projects",
+      "productClass": "suite-module",
+      "category": "work",
+      "technicalBoundary": "platform-module",
+      "defaultRoute": "/projects",
+      "marketingPath": "/products/projects",
+      "definition": "coordinated work",
+      "metaphor": "shared work checklist",
+      "excludes": [
+        "document authoring",
+        "agreement lifecycle"
+      ],
+      "master": "masters/ps-projects.svg",
+      "variants": {
+        "light": "light/ps-projects.svg",
+        "dark": "dark/ps-projects.svg"
+      }
+    },
+    {
+      "id": "ps-client-portal",
+      "label": "Client Portal",
+      "productClass": "external-surface",
+      "category": "work",
+      "technicalBoundary": "external-guest-surface",
+      "defaultRoute": "https://portal.proprietarysystems.ai",
+      "marketingPath": "/products/client-portal",
+      "definition": "external customer onboarding and collaboration",
+      "metaphor": "customer profile inside a portal window",
+      "excludes": [
+        "internal application launcher",
+        "public website publishing"
+      ],
+      "master": "masters/ps-client-portal.svg",
+      "variants": {
+        "light": "light/ps-client-portal.svg",
+        "dark": "dark/ps-client-portal.svg"
+      }
+    },
+    {
+      "id": "ps-docs",
+      "label": "PS Docs",
+      "productClass": "suite-module",
+      "category": "work",
+      "technicalBoundary": "platform-module",
+      "defaultRoute": "/docs",
+      "marketingPath": "/products/docs",
+      "definition": "document authoring",
+      "metaphor": "single authored page",
+      "excludes": [
+        "agreement lifecycle",
+        "coordinated work"
+      ],
+      "master": "masters/ps-docs.svg",
+      "variants": {
+        "light": "light/ps-docs.svg",
+        "dark": "dark/ps-docs.svg"
+      }
+    },
+    {
+      "id": "ps-sheets",
+      "label": "PS Sheets",
+      "productClass": "suite-module",
+      "category": "work",
+      "technicalBoundary": "platform-module",
+      "defaultRoute": "/sheets",
+      "marketingPath": "/products/sheets",
+      "definition": "structured calculation and tabular modeling",
+      "metaphor": "spreadsheet grid with active cells",
+      "excludes": [
+        "executive analytics",
+        "document authoring"
+      ],
+      "master": "masters/ps-sheets.svg",
+      "variants": {
+        "light": "light/ps-sheets.svg",
+        "dark": "dark/ps-sheets.svg"
+      }
+    },
+    {
+      "id": "ps-calendar",
+      "label": "PS Calendar",
+      "productClass": "suite-module",
+      "category": "work",
+      "technicalBoundary": "platform-module",
+      "defaultRoute": "/calendar",
+      "marketingPath": "/products/calendar",
+      "definition": "shared scheduling and business time",
+      "metaphor": "calendar page with scheduled blocks",
+      "excludes": [
+        "project task management",
+        "employee timekeeping"
+      ],
+      "master": "masters/ps-calendar.svg",
+      "variants": {
+        "light": "light/ps-calendar.svg",
+        "dark": "dark/ps-calendar.svg"
+      }
+    },
+    {
+      "id": "ps-messages",
+      "label": "PS Messages",
+      "productClass": "suite-module",
+      "category": "work",
+      "technicalBoundary": "platform-module",
+      "defaultRoute": "/messages",
+      "marketingPath": "/products/messages",
+      "definition": "internal and contextual business messaging",
+      "metaphor": "overlapping conversation bubbles",
+      "excludes": [
+        "outbound sequences",
+        "live calling"
+      ],
+      "master": "masters/ps-messages.svg",
+      "variants": {
+        "light": "light/ps-messages.svg",
+        "dark": "dark/ps-messages.svg"
+      }
+    },
+    {
+      "id": "ps-creatives",
+      "label": "PS Creatives",
+      "productClass": "suite-module",
+      "category": "create-operate",
+      "technicalBoundary": "platform-module",
+      "defaultRoute": "/creatives",
+      "marketingPath": "/products/creatives",
+      "definition": "visual design, creative production, and brand assets",
+      "metaphor": "creative artboard with a design tool",
+      "excludes": [
+        "AI assistant identity",
+        "website publishing",
+        "generic document authoring"
+      ],
+      "master": "masters/ps-creatives.svg",
+      "variants": {
+        "light": "light/ps-creatives.svg",
+        "dark": "dark/ps-creatives.svg"
+      }
+    },
+    {
+      "id": "ps-sites",
+      "label": "PS Sites",
+      "productClass": "suite-module",
+      "category": "create-operate",
+      "technicalBoundary": "platform-module",
+      "defaultRoute": "/sites",
+      "marketingPath": "/products/sites",
+      "definition": "website publishing",
+      "metaphor": "browser and globe",
+      "excludes": [
+        "internal application access",
+        "document authoring"
+      ],
+      "master": "masters/ps-sites.svg",
+      "variants": {
+        "light": "light/ps-sites.svg",
+        "dark": "dark/ps-sites.svg"
+      }
+    },
+    {
+      "id": "ps-automate",
+      "label": "PS Automate",
+      "productClass": "suite-module",
+      "category": "create-operate",
+      "technicalBoundary": "platform-module",
+      "defaultRoute": "/automate",
+      "marketingPath": "/products/automate",
+      "definition": "workflow triggers and connected actions",
+      "metaphor": "lightning between linked nodes",
+      "excludes": [
+        "AI assistant identity",
+        "project task management"
+      ],
+      "master": "masters/ps-automate.svg",
+      "variants": {
+        "light": "light/ps-automate.svg",
+        "dark": "dark/ps-automate.svg"
+      }
+    },
+    {
+      "id": "ps-email-signatures",
+      "label": "PS Email Signatures",
+      "productClass": "suite-module",
+      "category": "create-operate",
+      "technicalBoundary": "compatibility-web-runtime",
+      "defaultRoute": "/email-signatures",
+      "marketingPath": "/products/email-signatures",
+      "definition": "employee email-signature design, assignment, deployment, and campaign management",
+      "metaphor": "email composer with a branded employee signature card",
+      "excludes": [
+        "contract execution",
+        "generic document authoring"
+      ],
+      "master": "masters/ps-email-signatures.svg",
+      "variants": {
+        "light": "light/ps-email-signatures.svg",
+        "dark": "dark/ps-email-signatures.svg"
+      }
+    },
+    {
+      "id": "ps-people",
+      "label": "PS People",
+      "productClass": "suite-module",
+      "category": "company",
+      "technicalBoundary": "platform-module",
+      "defaultRoute": "/people",
+      "marketingPath": "/products/people",
+      "definition": "internal organizational structure and people operations",
+      "metaphor": "organization hierarchy",
+      "excludes": [
+        "external relationship records",
+        "prospect discovery"
+      ],
+      "master": "masters/ps-people.svg",
+      "variants": {
+        "light": "light/ps-people.svg",
+        "dark": "dark/ps-people.svg"
+      }
+    },
+    {
+      "id": "ps-finance",
+      "label": "PS Finance",
+      "productClass": "suite-module",
+      "category": "company",
+      "technicalBoundary": "platform-module",
+      "defaultRoute": "/finance",
+      "marketingPath": "/products/finance",
+      "definition": "financial planning, forecasting, and performance",
+      "metaphor": "growth bars and trend line",
+      "excludes": [
+        "general analytics",
+        "regulated accounting execution"
+      ],
+      "master": "masters/ps-finance.svg",
+      "variants": {
+        "light": "light/ps-finance.svg",
+        "dark": "dark/ps-finance.svg"
+      }
+    },
+    {
+      "id": "ps-insights",
+      "label": "PS Insights",
+      "productClass": "suite-module",
+      "category": "intelligence",
+      "technicalBoundary": "platform-module",
+      "defaultRoute": "/insights",
+      "marketingPath": "/products/insights",
+      "definition": "cross-functional executive analytics",
+      "metaphor": "dashboard with coordinated charts",
+      "excludes": [
+        "financial planning",
+        "spreadsheet modeling"
+      ],
+      "master": "masters/ps-insights.svg",
+      "variants": {
+        "light": "light/ps-insights.svg",
+        "dark": "dark/ps-insights.svg"
+      }
+    },
+    {
+      "id": "ps-strategy",
+      "label": "PS Strategy",
+      "productClass": "suite-module",
+      "category": "intelligence",
+      "technicalBoundary": "platform-module",
+      "defaultRoute": "/strategy",
+      "marketingPath": "/products/strategy",
+      "definition": "strategic planning and decision coordination",
+      "metaphor": "compass over a planning field",
+      "excludes": [
+        "project task execution",
+        "geographic territory"
+      ],
+      "master": "masters/ps-strategy.svg",
+      "variants": {
+        "light": "light/ps-strategy.svg",
+        "dark": "dark/ps-strategy.svg"
+      }
+    },
+    {
+      "id": "ps-territory",
+      "label": "PS Territory",
+      "productClass": "suite-module",
+      "category": "intelligence",
+      "technicalBoundary": "platform-module",
+      "defaultRoute": "/territory",
+      "marketingPath": "/products/territory",
+      "definition": "operational geographic coverage",
+      "metaphor": "route across a folded map",
+      "excludes": [
+        "property intelligence",
+        "project coordination"
+      ],
+      "master": "masters/ps-territory.svg",
+      "variants": {
+        "light": "light/ps-territory.svg",
+        "dark": "dark/ps-territory.svg"
+      }
+    },
+    {
+      "id": "ps-places",
+      "label": "PS Places",
+      "productClass": "suite-module",
+      "category": "intelligence",
+      "technicalBoundary": "specialized-data-plane",
+      "defaultRoute": "/places",
+      "marketingPath": "/products/places",
+      "definition": "property and location intelligence",
+      "metaphor": "building and location pin",
+      "excludes": [
+        "operational territory coverage",
+        "generic map search"
+      ],
+      "master": "masters/ps-places.svg",
+      "variants": {
+        "light": "light/ps-places.svg",
+        "dark": "dark/ps-places.svg"
+      }
+    }
+  ],
+  "aliases": {
+    "ps-portal": "ps-home",
+    "peter-studio": "ps-creatives",
+    "ps-signatures": "ps-email-signatures"
+  }
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" data-illustration-version="3" data-theme="light" shape-rendering="geometricPrecision" viewBox="0 0 320 240" role="img" aria-labelledby="t d">
+<title id="t">PS Sites product diorama</title><desc id="d">A dimensional website canvas with a detached editing palette and active cursor.</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00E5C2"/><stop offset="1" stop-color="#0097A7"/></linearGradient><filter id="s" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#0A2030" flood-opacity=".15"/></filter></defs>
+<g aria-hidden="true" class="v3-atmosphere">
+  <ellipse cx="160" cy="205" rx="128" ry="18" fill="#0A2030" opacity=".035"/>
+  <circle cx="247" cy="69" r="47" fill="#5B8DEF" opacity=".055"/>
+  <path d="M54 193 160 132l106 31M76 205l105-61 83 24" fill="none" stroke="#0097A7" stroke-width="1.5" opacity=".09" stroke-linecap="round"/>
+</g>
+<ellipse cx="160" cy="207" rx="112" ry="16" fill="#0A2030" opacity=".11"/>
+<g filter="url(#s)"><path d="m49 182 95-55 130 38-95 55Z" fill="#D9ECEB"/><path d="M49 182v10l130 37v-9Z" fill="#A9CFCD"/><path d="m179 220 95-55v10l-95 54Z" fill="#7FB7B7"/>
+<rect x="45" y="47" width="224" height="146" rx="18" fill="#FFFFFF" stroke="#0A2030" stroke-width="3"/><path d="M45 73h224" stroke="#D3E6E6" stroke-width="3"/><circle cx="61" cy="60" r="4" fill="#FF7A66"/><circle cx="75" cy="60" r="4" fill="#F4B740"/><circle cx="89" cy="60" r="4" fill="#00E5C2"/>
+<rect x="62" y="89" width="103" height="85" rx="12" fill="#0A2030"/><circle cx="133" cy="112" r="27" fill="#0097A7"/><circle cx="145" cy="102" r="18" fill="#00E5C2" opacity=".8"/><path d="M76 143h60M76 156h43" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/><rect x="76" y="165" width="38" height="5" rx="2.5" fill="#00E5C2"/>
+<rect x="181" y="89" width="71" height="22" rx="8" fill="#F6FBFB" stroke="#B7DAD8" stroke-width="2"/><rect x="181" y="123" width="31" height="51" rx="9" fill="#5B8DEF"/><rect x="221" y="123" width="31" height="23" rx="9" fill="#F4B740"/><rect x="221" y="154" width="31" height="20" rx="9" fill="url(#g)"/>
+<path d="m198 138 27 16-12 4-6 16Z" fill="#FFFFFF" stroke="#0A2030" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M248 37 266 19l18 18-18 18Z" fill="#7C5CFC"/><path d="M266 26v22m-11-11h22" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/></g>
+<!-- PS Sites · V3 light · native vector -->
+</svg>

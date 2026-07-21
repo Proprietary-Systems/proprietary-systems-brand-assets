@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" data-illustration-version="3" data-theme="light" shape-rendering="geometricPrecision" viewBox="0 0 320 240" role="img" aria-labelledby="t d">
+<title id="t">PS Automate product diorama</title><desc id="d">A trigger enters a spatial workflow and exits as verified action.</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00E5C2"/><stop offset="1" stop-color="#0097A7"/></linearGradient><filter id="s" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="9" stdDeviation="7" flood-color="#0A2030" flood-opacity=".15"/></filter></defs>
+<g aria-hidden="true" class="v3-atmosphere">
+  <ellipse cx="160" cy="205" rx="128" ry="18" fill="#0A2030" opacity=".035"/>
+  <circle cx="247" cy="69" r="47" fill="#7C5CFC" opacity=".055"/>
+  <path d="M54 193 160 132l106 31M76 205l105-61 83 24" fill="none" stroke="#0097A7" stroke-width="1.5" opacity=".09" stroke-linecap="round"/>
+</g>
+<ellipse cx="160" cy="207" rx="118" ry="16" fill="#0A2030" opacity=".1"/>
+<g filter="url(#s)"><path d="m40 168 103-60 138 40-102 60Z" fill="#D9ECEB"/><path d="M40 168v11l139 40v-11Z" fill="#A9CFCD"/><path d="m179 208 102-60v11l-102 60Z" fill="#7FB7B7"/>
+<path d="m42 104 51-30 43 24-51 30Z" fill="#0A2030"/><path d="m42 104 43 24v20l-43-24Z" fill="#073947"/><path d="m85 128 51-30v20l-51 30Z" fill="#052F3B"/><path d="m82 88-14 22h13l-4 15 25-28H89l6-9Z" fill="#00E5C2"/>
+<path d="M128 113h26c15 0 22 8 22 21v13c0 13 7 20 20 20h25" fill="none" stroke="#0097A7" stroke-width="5" stroke-linecap="round"/><path d="M176 139c0-13 7-20 20-20h25" fill="none" stroke="#0097A7" stroke-width="5" stroke-linecap="round"/>
+<path d="m137 144 39-23 39 23-39 23Z" fill="#FFFFFF"/><path d="m137 144 39 23v17l-39-23Z" fill="#B7DAD8"/><path d="m176 167 39-23v17l-39 23Z" fill="#85BDBB"/><circle cx="176" cy="144" r="15" fill="url(#g)"/><path d="M176 135v18m-9-9h18" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+<path d="m221 100 42-24 38 22-42 24Z" fill="#FFFFFF"/><path d="m221 100 38 22v19l-38-22Z" fill="#B7DAD8"/><path d="m259 122 42-24v19l-42 24Z" fill="#85BDBB"/><path d="m246 100 9 9 19-23" fill="none" stroke="#0097A7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="238" cy="173" r="22" fill="#7C5CFC"/><path d="M227 173h22M238 162v22" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/></g>
+<!-- PS Automate · V3 light · native vector -->
+</svg>

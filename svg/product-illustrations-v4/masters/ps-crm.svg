@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc" data-illustration-version="4" data-theme="master" shape-rendering="geometricPrecision">
+<title id="title">PS CRM flat-object product icon</title><desc id="desc">managed external relationships, represented by external contact record.</desc>
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0A2030" flood-opacity=".12"/></filter></defs>
+<g filter="url(#shadow)">
+<rect x="76" y="55" width="126" height="151" rx="12" fill="#E6F2F2"/>
+<rect x="54" y="37" width="126" height="151" rx="12" fill="#0097A7"/>
+<circle cx="117" cy="84" r="22" fill="#FFFFFF"/><path d="M82 133c5-24 18-36 35-36s30 12 35 36Z" fill="#FFFFFF"/>
+<path d="M83 151h68M83 169h51" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/></g>
+</svg>

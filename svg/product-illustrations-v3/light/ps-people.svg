@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" data-illustration-version="3" data-theme="light" shape-rendering="geometricPrecision" viewBox="0 0 320 240" role="img" aria-labelledby="t d">
+<title id="t">PS People product diorama</title><desc id="d">A dimensional organization network connecting leaders, teams, and employee records.</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00E5C2"/><stop offset="1" stop-color="#0097A7"/></linearGradient><filter id="s" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="9" stdDeviation="7" flood-color="#0A2030" flood-opacity=".15"/></filter></defs>
+<g aria-hidden="true" class="v3-atmosphere">
+  <ellipse cx="160" cy="205" rx="128" ry="18" fill="#0A2030" opacity=".035"/>
+  <circle cx="247" cy="69" r="47" fill="#FF7A66" opacity=".055"/>
+  <path d="M54 193 160 132l106 31M76 205l105-61 83 24" fill="none" stroke="#0097A7" stroke-width="1.5" opacity=".09" stroke-linecap="round"/>
+</g>
+<ellipse cx="160" cy="207" rx="116" ry="15" fill="#0A2030" opacity=".1"/>
+<path d="M160 93v28M75 121h170M75 121v31M160 121v31M245 121v31" fill="none" stroke="#0097A7" stroke-width="4" stroke-linecap="round"/>
+<g filter="url(#s)"><path d="m111 58 49-28 49 28-49 29Z" fill="#0A2030"/><path d="m111 58 49 29v20l-49-29Z" fill="#073947"/><path d="m160 87 49-29v20l-49 29Z" fill="#052F3B"/><circle cx="160" cy="58" r="16" fill="#00E5C2"/><circle cx="160" cy="52" r="5" fill="#0A2030"/><path d="M149 69c4-8 9-11 11-11s8 3 11 11" fill="#0097A7"/>
+<path d="m35 161 40-23 40 23-40 23Z" fill="#FFFFFF"/><path d="m35 161 40 23v19l-40-23Z" fill="#B7DAD8"/><path d="m75 184 40-23v19l-40 23Z" fill="#85BDBB"/><circle cx="75" cy="160" r="14" fill="#5B8DEF"/><circle cx="75" cy="155" r="5" fill="#FFFFFF"/><path d="M66 169c3-7 7-9 9-9s7 2 9 9" fill="#FFFFFF"/>
+<path d="m120 161 40-23 40 23-40 23Z" fill="#FFFFFF"/><path d="m120 161 40 23v19l-40-23Z" fill="#B7DAD8"/><path d="m160 184 40-23v19l-40 23Z" fill="#85BDBB"/><circle cx="160" cy="160" r="14" fill="#7C5CFC"/><circle cx="160" cy="155" r="5" fill="#FFFFFF"/><path d="M151 169c3-7 7-9 9-9s7 2 9 9" fill="#FFFFFF"/>
+<path d="m205 161 40-23 40 23-40 23Z" fill="#FFFFFF"/><path d="m205 161 40 23v19l-40-23Z" fill="#B7DAD8"/><path d="m245 184 40-23v19l-40 23Z" fill="#85BDBB"/><circle cx="245" cy="160" r="14" fill="#FF7A66"/><circle cx="245" cy="155" r="5" fill="#FFFFFF"/><path d="M236 169c3-7 7-9 9-9s7 2 9 9" fill="#FFFFFF"/></g>
+<!-- PS People · V3 light · native vector -->
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc" data-illustration-version="4" data-theme="dark" shape-rendering="geometricPrecision">
+<title id="title">PS Places flat-object product icon</title><desc id="desc">property and location intelligence, represented by building and location pin.</desc>
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#000A10" flood-opacity=".28"/></filter></defs>
+<g filter="url(#shadow)">
+<path d="M35 75h111v146H35Z" fill="#00AFC0"/><path d="M58 48h65v27H58Z" fill="#00AFC0"/>
+<g fill="#F6FBFB"><rect x="57" y="98" width="17" height="17" rx="3"/><rect x="88" y="98" width="17" height="17" rx="3"/><rect x="57" y="132" width="17" height="17" rx="3"/><rect x="88" y="132" width="17" height="17" rx="3"/><rect x="73" y="178" width="35" height="43" rx="4"/></g>
+<path d="M184 59c-30 0-54 24-54 54 0 45 54 100 54 100s54-55 54-100c0-30-24-54-54-54Z" fill="#00E5C2"/><circle cx="184" cy="113" r="22" fill="#F6FBFB"/></g>
+</svg>
