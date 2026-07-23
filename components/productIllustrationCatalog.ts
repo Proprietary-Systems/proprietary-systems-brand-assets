@@ -59,7 +59,7 @@ export const PROPRIETARY_SYSTEMS_PRODUCT_ILLUSTRATIONS: Record<ProprietarySystem
   "peter-ai": {
     id: "peter-ai",
     label: "PS.AI",
-    definition: "contextual customer assistant for conversation and policy-authorized business actions; product development remains in separately trusted internal Codex workflows",
+    definition: "contextual customer assistant for conversation and policy-authorized business actions, plus a separately capability-gated task and evidence view for the server-derived Proprietary Systems internal workspace; product-development execution and credentials remain in trusted Codex workflows outside the browser",
     productClass: "suite-module",
     category: "platform",
     technicalBoundary: "platform-layer",
