@@ -277,7 +277,7 @@
       "includedInSuite": true,
       "defaultRoute": "/ps-ai",
       "marketingPath": "/products/peter-ai",
-      "definition": "contextual customer assistant for conversation and policy-authorized business actions; product development remains in separately trusted internal Codex workflows",
+      "definition": "contextual customer assistant for conversation and policy-authorized business actions, plus a separately capability-gated task and evidence view for the server-derived Proprietary Systems internal workspace; product-development execution and credentials remain in trusted Codex workflows outside the browser",
       "features": ["business assistant", "durable conversations", "product feedback", "policy-authorized business actions"],
       "visual": {
         "metaphor": "Proprietary Systems mark framing one calm assistant conversation",

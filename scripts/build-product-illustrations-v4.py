@@ -231,13 +231,43 @@ def get_font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont:
     return ImageFont.load_default(size=size)
 
 
+def clamped_text_lines(
+    draw: ImageDraw.ImageDraw,
+    text: str,
+    font: ImageFont.FreeTypeFont,
+    max_width: int,
+    max_lines: int,
+) -> list[str]:
+    """Wrap preview copy without letting presentation metadata escape its card."""
+    words = text.split()
+    lines: list[str] = []
+    cursor = 0
+    while cursor < len(words) and len(lines) < max_lines:
+        line_words: list[str] = []
+        while cursor < len(words):
+            candidate = " ".join([*line_words, words[cursor]])
+            if line_words and draw.textlength(candidate, font=font) > max_width:
+                break
+            line_words.append(words[cursor])
+            cursor += 1
+        lines.append(" ".join(line_words))
+
+    if cursor < len(words) and lines:
+        suffix = "…"
+        last = lines[-1].rstrip(" ,;:-")
+        while last and draw.textlength(f"{last}{suffix}", font=font) > max_width:
+            last = last.rsplit(" ", 1)[0] if " " in last else last[:-1]
+        lines[-1] = f"{last}{suffix}"
+    return lines
+
+
 def make_contact_sheet(theme: str) -> Path:
     bg = "#EEF5F4" if theme == "light" else "#06151E"
     card = "#FFFFFF" if theme == "light" else "#0B2430"
     outline = "#D5E5E3" if theme == "light" else "#23505C"
     primary = "#0A2030" if theme == "light" else "#E8FAF7"
     secondary = "#5F777D" if theme == "light" else "#91B8B6"
-    width, cols, card_w, card_h, gap = 1800, 4, 400, 344, 28
+    width, cols, card_w, card_h, gap = 1800, 4, 400, 362, 28
     top = 160
     rows = math.ceil(len(PRODUCTS) / cols)
     height = top + rows * card_h + max(rows - 1, 0) * gap + 90
@@ -255,14 +285,28 @@ def make_contact_sheet(theme: str) -> Path:
         art.thumbnail((258, 258), Image.Resampling.LANCZOS)
         canvas.paste(art, (x + (card_w - art.width) // 2, y + 6), art)
         draw.text((x + 24, y + 268), product["label"], font=get_font(22, True), fill=primary)
-        draw.text((x + 24, y + 299), product["definition"], font=get_font(14), fill=secondary)
+        definition_font = get_font(14)
+        definition_lines = clamped_text_lines(
+            draw,
+            product["definition"],
+            definition_font,
+            card_w - 48,
+            2,
+        )
+        draw.multiline_text(
+            (x + 24, y + 299),
+            "\n".join(definition_lines),
+            font=definition_font,
+            fill=secondary,
+            spacing=2,
+        )
         if product["productClass"] == "external-surface":
             boundary_label = "EXTERNAL SURFACE"
         elif product["technicalBoundary"] in {"specialized-data-plane", "compatibility-web-runtime"}:
             boundary_label = "SUITE · BOUNDED RUNTIME"
         else:
             boundary_label = "SUITE"
-        draw.text((x + 24, y + 324), boundary_label, font=get_font(11, True), fill="#00A9AA" if theme == "light" else "#00E5C2")
+        draw.text((x + 24, y + 342), boundary_label, font=get_font(11, True), fill="#00A9AA" if theme == "light" else "#00E5C2")
     target = ROOT / "preview" / f"product-illustrations-v4-{theme}-contact-sheet.png"
     canvas.save(target)
     return target
@@ -286,7 +330,15 @@ def make_legibility_sheet() -> Path:
         canvas.paste(light, (63, y + 15), light)
         canvas.paste(dark, (142, y + 15), dark)
         draw.text((226, y + 17), product["label"], font=get_font(18, True), fill="#0A2030")
-        draw.text((226, y + 44), product["definition"], font=get_font(14), fill="#61777D")
+        definition_font = get_font(14)
+        definition = clamped_text_lines(
+            draw,
+            product["definition"],
+            definition_font,
+            width - 226 - 62,
+            1,
+        )[0]
+        draw.text((226, y + 44), definition, font=definition_font, fill="#61777D")
     target = ROOT / "preview" / "product-illustrations-v4-48px-legibility.png"
     canvas.save(target)
     return target
