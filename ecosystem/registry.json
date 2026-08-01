@@ -593,7 +593,7 @@
     },
     {
       "id": "ps-sheets",
-      "label": "PS Sheets",
+      "label": "PS Spreadsheets",
       "productClass": "suite-module",
       "slug": "sheets",
       "category": "finance",
