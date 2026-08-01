@@ -166,7 +166,7 @@ export const PROPRIETARY_SYSTEMS_PRODUCT_ILLUSTRATIONS: Record<ProprietarySystem
   },
   "ps-sheets": {
     id: "ps-sheets",
-    label: "PS Sheets",
+    label: "PS Spreadsheets",
     definition: "structured calculation and tabular modeling",
     productClass: "suite-module",
     category: "work",

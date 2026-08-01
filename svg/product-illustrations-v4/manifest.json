@@ -222,7 +222,7 @@
     },
     {
       "id": "ps-sheets",
-      "label": "PS Sheets",
+      "label": "PS Spreadsheets",
       "productClass": "suite-module",
       "category": "finance",
       "technicalBoundary": "platform-module",
