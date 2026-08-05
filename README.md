@@ -93,6 +93,7 @@ React callers can use:
 The registry makes these distinctions explicit:
 
 - `PS Home` is the internal application launcher and business command center.
+- Launcher navigation contains only catalog-promoted products; explicitly hidden products retain their suite identity, route, and illustrations.
 - `Client Portal` is the external customer onboarding and collaboration surface.
 - Core modules route through `app.proprietarysystems.ai`.
 - Dialer, Email Signatures, and Places use canonical suite routes while retaining the bounded runtimes their operations require.

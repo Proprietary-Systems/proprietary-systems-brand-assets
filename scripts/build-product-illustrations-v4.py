@@ -60,6 +60,7 @@ def load_products() -> list[dict]:
         for group in ECOSYSTEM["navigation"]
         for product_id in group["products"]
     ]
+    ordered_ids.extend(ECOSYSTEM.get("launcher", {}).get("hiddenProducts", []))
     for product_id in ordered_ids:
         product = product_by_id[product_id]
         visual = product["visual"]
@@ -81,7 +82,7 @@ def load_products() -> list[dict]:
 PRODUCTS = load_products()
 
 BODIES = {
-    "peter-ai": '''
+    "ps-ai": '''
 <rect x="63" y="57" width="130" height="143" rx="42" fill="{support}"/>
 <path d="M128 57V31" stroke="{ink}" stroke-width="8" stroke-linecap="round"/><circle cx="128" cy="25" r="10" fill="{teal}"/>
 <rect x="46" y="94" width="24" height="58" rx="10" fill="{ink}"/><rect x="186" y="94" width="24" height="58" rx="10" fill="{ink}"/>

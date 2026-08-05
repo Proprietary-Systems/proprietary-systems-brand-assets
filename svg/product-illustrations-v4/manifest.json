@@ -40,24 +40,24 @@
       }
     },
     {
-      "id": "peter-ai",
+      "id": "ps-ai",
       "label": "PS.AI",
       "productClass": "suite-module",
       "category": "platform",
       "technicalBoundary": "platform-layer",
       "defaultRoute": "/ps-ai",
-      "marketingPath": "/products/peter-ai",
+      "marketingPath": "/products/ps-ai",
       "definition": "contextual customer assistant for conversation and policy-authorized business actions, plus a separately capability-gated task and evidence view for the server-derived Proprietary Systems internal workspace; product-development execution and credentials remain in trusted Codex workflows outside the browser",
-      "metaphor": "Proprietary Systems mark framing one calm assistant conversation",
+      "metaphor": "Proprietary Systems mark framing one assistant conversation",
       "excludes": [
         "generic automation",
         "human employee records",
         "source-code development tools"
       ],
-      "master": "masters/peter-ai.svg",
+      "master": "masters/ps-ai.svg",
       "variants": {
-        "light": "light/peter-ai.svg",
-        "dark": "dark/peter-ai.svg"
+        "light": "light/ps-ai.svg",
+        "dark": "dark/ps-ai.svg"
       }
     },
     {
@@ -141,23 +141,64 @@
       }
     },
     {
-      "id": "ps-contracts",
-      "label": "PS Contracts",
+      "id": "ps-email-signatures",
+      "label": "PS Email Signatures",
       "productClass": "suite-module",
-      "category": "legal",
-      "technicalBoundary": "platform-module",
-      "defaultRoute": "/contracts",
-      "marketingPath": "/products/contracts",
-      "definition": "agreement lifecycle, execution, and legal operations",
-      "metaphor": "agreement with governance shield",
+      "category": "marketing-sales",
+      "technicalBoundary": "compatibility-web-runtime",
+      "defaultRoute": "/email-signatures",
+      "marketingPath": "/products/email-signatures",
+      "definition": "employee email-signature design, assignment, deployment, and campaign management",
+      "metaphor": "email composer with a branded employee signature card",
       "excludes": [
-        "employee email-signature management",
+        "contract execution",
         "generic document authoring"
       ],
-      "master": "masters/ps-contracts.svg",
+      "master": "masters/ps-email-signatures.svg",
       "variants": {
-        "light": "light/ps-contracts.svg",
-        "dark": "dark/ps-contracts.svg"
+        "light": "light/ps-email-signatures.svg",
+        "dark": "dark/ps-email-signatures.svg"
+      }
+    },
+    {
+      "id": "ps-creatives",
+      "label": "PS Creatives",
+      "productClass": "suite-module",
+      "category": "marketing-sales",
+      "technicalBoundary": "platform-module",
+      "defaultRoute": "/creatives",
+      "marketingPath": "/products/creatives",
+      "definition": "visual design, creative production, and brand assets",
+      "metaphor": "creative artboard with a design tool",
+      "excludes": [
+        "AI assistant identity",
+        "website publishing",
+        "generic document authoring"
+      ],
+      "master": "masters/ps-creatives.svg",
+      "variants": {
+        "light": "light/ps-creatives.svg",
+        "dark": "dark/ps-creatives.svg"
+      }
+    },
+    {
+      "id": "ps-insights",
+      "label": "PS Insights",
+      "productClass": "suite-module",
+      "category": "marketing-sales",
+      "technicalBoundary": "platform-module",
+      "defaultRoute": "/insights",
+      "marketingPath": "/products/insights",
+      "definition": "cross-functional executive analytics",
+      "metaphor": "dashboard with coordinated charts",
+      "excludes": [
+        "financial planning",
+        "spreadsheet modeling"
+      ],
+      "master": "masters/ps-insights.svg",
+      "variants": {
+        "light": "light/ps-insights.svg",
+        "dark": "dark/ps-insights.svg"
       }
     },
     {
@@ -201,46 +242,6 @@
       }
     },
     {
-      "id": "ps-docs",
-      "label": "PS Docs",
-      "productClass": "suite-module",
-      "category": "legal",
-      "technicalBoundary": "platform-module",
-      "defaultRoute": "/docs",
-      "marketingPath": "/products/docs",
-      "definition": "document authoring",
-      "metaphor": "single authored page",
-      "excludes": [
-        "agreement lifecycle",
-        "coordinated work"
-      ],
-      "master": "masters/ps-docs.svg",
-      "variants": {
-        "light": "light/ps-docs.svg",
-        "dark": "dark/ps-docs.svg"
-      }
-    },
-    {
-      "id": "ps-sheets",
-      "label": "PS Spreadsheets",
-      "productClass": "suite-module",
-      "category": "finance",
-      "technicalBoundary": "platform-module",
-      "defaultRoute": "/sheets",
-      "marketingPath": "/products/sheets",
-      "definition": "structured calculation and tabular modeling",
-      "metaphor": "spreadsheet grid with active cells",
-      "excludes": [
-        "executive analytics",
-        "document authoring"
-      ],
-      "master": "masters/ps-sheets.svg",
-      "variants": {
-        "light": "light/ps-sheets.svg",
-        "dark": "dark/ps-sheets.svg"
-      }
-    },
-    {
       "id": "ps-calendar",
       "label": "PS Calendar",
       "productClass": "suite-module",
@@ -278,27 +279,6 @@
       "variants": {
         "light": "light/ps-messages.svg",
         "dark": "dark/ps-messages.svg"
-      }
-    },
-    {
-      "id": "ps-creatives",
-      "label": "PS Creatives",
-      "productClass": "suite-module",
-      "category": "marketing-sales",
-      "technicalBoundary": "platform-module",
-      "defaultRoute": "/creatives",
-      "marketingPath": "/products/creatives",
-      "definition": "visual design, creative production, and brand assets",
-      "metaphor": "creative artboard with a design tool",
-      "excludes": [
-        "AI assistant identity",
-        "website publishing",
-        "generic document authoring"
-      ],
-      "master": "masters/ps-creatives.svg",
-      "variants": {
-        "light": "light/ps-creatives.svg",
-        "dark": "dark/ps-creatives.svg"
       }
     },
     {
@@ -342,26 +322,6 @@
       }
     },
     {
-      "id": "ps-email-signatures",
-      "label": "PS Email Signatures",
-      "productClass": "suite-module",
-      "category": "marketing-sales",
-      "technicalBoundary": "compatibility-web-runtime",
-      "defaultRoute": "/email-signatures",
-      "marketingPath": "/products/email-signatures",
-      "definition": "employee email-signature design, assignment, deployment, and campaign management",
-      "metaphor": "email composer with a branded employee signature card",
-      "excludes": [
-        "contract execution",
-        "generic document authoring"
-      ],
-      "master": "masters/ps-email-signatures.svg",
-      "variants": {
-        "light": "light/ps-email-signatures.svg",
-        "dark": "dark/ps-email-signatures.svg"
-      }
-    },
-    {
       "id": "ps-people",
       "label": "PS People",
       "productClass": "suite-module",
@@ -382,46 +342,6 @@
       }
     },
     {
-      "id": "ps-finance",
-      "label": "PS Finance",
-      "productClass": "suite-module",
-      "category": "finance",
-      "technicalBoundary": "platform-module",
-      "defaultRoute": "/finance",
-      "marketingPath": "/products/finance",
-      "definition": "financial planning, forecasting, and performance",
-      "metaphor": "growth bars and trend line",
-      "excludes": [
-        "general analytics",
-        "regulated accounting execution"
-      ],
-      "master": "masters/ps-finance.svg",
-      "variants": {
-        "light": "light/ps-finance.svg",
-        "dark": "dark/ps-finance.svg"
-      }
-    },
-    {
-      "id": "ps-insights",
-      "label": "PS Insights",
-      "productClass": "suite-module",
-      "category": "marketing-sales",
-      "technicalBoundary": "platform-module",
-      "defaultRoute": "/insights",
-      "marketingPath": "/products/insights",
-      "definition": "cross-functional executive analytics",
-      "metaphor": "dashboard with coordinated charts",
-      "excludes": [
-        "financial planning",
-        "spreadsheet modeling"
-      ],
-      "master": "masters/ps-insights.svg",
-      "variants": {
-        "light": "light/ps-insights.svg",
-        "dark": "dark/ps-insights.svg"
-      }
-    },
-    {
       "id": "ps-strategy",
       "label": "PS Strategy",
       "productClass": "suite-module",
@@ -439,6 +359,86 @@
       "variants": {
         "light": "light/ps-strategy.svg",
         "dark": "dark/ps-strategy.svg"
+      }
+    },
+    {
+      "id": "ps-contracts",
+      "label": "PS Contracts",
+      "productClass": "suite-module",
+      "category": "legal",
+      "technicalBoundary": "platform-module",
+      "defaultRoute": "/contracts",
+      "marketingPath": "/products/contracts",
+      "definition": "agreement lifecycle, execution, and legal operations",
+      "metaphor": "agreement with governance shield",
+      "excludes": [
+        "employee email-signature management",
+        "generic document authoring"
+      ],
+      "master": "masters/ps-contracts.svg",
+      "variants": {
+        "light": "light/ps-contracts.svg",
+        "dark": "dark/ps-contracts.svg"
+      }
+    },
+    {
+      "id": "ps-docs",
+      "label": "PS Docs",
+      "productClass": "suite-module",
+      "category": "legal",
+      "technicalBoundary": "platform-module",
+      "defaultRoute": "/docs",
+      "marketingPath": "/products/docs",
+      "definition": "document authoring",
+      "metaphor": "single authored page",
+      "excludes": [
+        "agreement lifecycle",
+        "coordinated work"
+      ],
+      "master": "masters/ps-docs.svg",
+      "variants": {
+        "light": "light/ps-docs.svg",
+        "dark": "dark/ps-docs.svg"
+      }
+    },
+    {
+      "id": "ps-sheets",
+      "label": "PS Spreadsheets",
+      "productClass": "suite-module",
+      "category": "finance",
+      "technicalBoundary": "platform-module",
+      "defaultRoute": "/sheets",
+      "marketingPath": "/products/sheets",
+      "definition": "structured calculation and tabular modeling",
+      "metaphor": "spreadsheet grid with active cells",
+      "excludes": [
+        "executive analytics",
+        "document authoring"
+      ],
+      "master": "masters/ps-sheets.svg",
+      "variants": {
+        "light": "light/ps-sheets.svg",
+        "dark": "dark/ps-sheets.svg"
+      }
+    },
+    {
+      "id": "ps-finance",
+      "label": "PS Finance",
+      "productClass": "suite-module",
+      "category": "finance",
+      "technicalBoundary": "platform-module",
+      "defaultRoute": "/finance",
+      "marketingPath": "/products/finance",
+      "definition": "financial planning, forecasting, and performance",
+      "metaphor": "growth bars and trend line",
+      "excludes": [
+        "general analytics",
+        "regulated accounting execution"
+      ],
+      "master": "masters/ps-finance.svg",
+      "variants": {
+        "light": "light/ps-finance.svg",
+        "dark": "dark/ps-finance.svg"
       }
     },
     {
@@ -484,6 +484,7 @@
   ],
   "aliases": {
     "ps-portal": "ps-home",
+    "peter-ai": "ps-ai",
     "peter-studio": "ps-creatives",
     "ps-signatures": "ps-email-signatures"
   }
