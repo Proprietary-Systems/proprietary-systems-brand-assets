@@ -8,7 +8,7 @@ This registry publishes:
 
 - the organization and workspace model;
 - product names, meanings, routes, and technical boundaries;
-- global launcher groups;
+- promoted launcher groups and the explicit hidden-product projection;
 - canonical, separate-runtime, migration, client-delivery, and retired hostnames;
 - the mapping from every product to its V4 light/dark illustration.
 
@@ -16,7 +16,7 @@ This registry publishes:
 
 - A customer business is a tenant of Proprietary Systems, not a project in the PS product catalog.
 - One tenant receives one connected workspace by default. Divisions, departments, locations, and teams live inside it.
-- Every product is accessible through the suite. A separate runtime or data plane is a security and operational boundary, not a separate customer identity.
+- Every product is accessible through the suite. Launcher promotion is separate from direct-route access. A separate runtime or data plane is a security and operational boundary, not a separate customer identity.
 - Core module marketing pages use `proprietarysystems.ai/products/{slug}` and open routes under `app.proprietarysystems.ai`.
 - Dialer, Email Signatures, and Places use the suite marketing and application routes; current browser hosts remain compatibility evidence, while bounded APIs and data planes remain independent where justified.
 - `PS Home` is the internal application launcher. `Client Portal` is the external customer-facing collaboration surface.

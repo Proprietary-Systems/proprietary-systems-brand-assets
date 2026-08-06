@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "1.2.0",
-  "lastReviewed": "2026-07-18",
+  "version": "1.2.2",
+  "lastReviewed": "2026-08-03",
   "brand": "Proprietary Systems",
   "suiteName": "Proprietary Systems",
   "positioning": "One intelligent operating system for the entire business.",
@@ -41,9 +41,13 @@
     "columns": 3,
     "featuredLabel": "Quick access",
     "allProductsLabel": "All products",
+    "hiddenProducts": [
+      "ps-territory",
+      "ps-places"
+    ],
     "featuredProducts": [
       "ps-home",
-      "peter-ai",
+      "ps-ai",
       "ps-crm",
       "ps-prospect",
       "ps-outreach",
@@ -146,7 +150,7 @@
         "role": "shared control plane, unified application shell, and canonical product facades",
         "runtimeProducts": [
           "ps-home",
-          "peter-ai",
+          "ps-ai",
           "ps-crm",
           "ps-prospect",
           "ps-outreach",
@@ -239,7 +243,7 @@
       "label": "Platform",
       "products": [
         "ps-home",
-        "peter-ai"
+        "ps-ai"
       ]
     },
     {
@@ -266,9 +270,7 @@
         "ps-sites",
         "ps-automate",
         "ps-people",
-        "ps-strategy",
-        "ps-territory",
-        "ps-places"
+        "ps-strategy"
       ]
     },
     {
@@ -326,7 +328,7 @@
       }
     },
     {
-      "id": "peter-ai",
+      "id": "ps-ai",
       "label": "PS.AI",
       "productClass": "suite-module",
       "slug": "ps-ai",
@@ -334,7 +336,7 @@
       "technicalBoundary": "platform-layer",
       "includedInSuite": true,
       "defaultRoute": "/ps-ai",
-      "marketingPath": "/products/peter-ai",
+      "marketingPath": "/products/ps-ai",
       "definition": "contextual customer assistant for conversation and policy-authorized business actions, plus a separately capability-gated task and evidence view for the server-derived Proprietary Systems internal workspace; product-development execution and credentials remain in trusted Codex workflows outside the browser",
       "features": [
         "business assistant",
@@ -343,7 +345,7 @@
         "policy-authorized business actions"
       ],
       "visual": {
-        "metaphor": "Proprietary Systems mark framing one calm assistant conversation",
+        "metaphor": "Proprietary Systems mark framing one assistant conversation",
         "excludes": [
           "generic automation",
           "human employee records",
@@ -911,6 +913,7 @@
   ],
   "aliases": {
     "ps-portal": "ps-home",
+    "peter-ai": "ps-ai",
     "peter-studio": "ps-creatives",
     "ps-signatures": "ps-email-signatures"
   }

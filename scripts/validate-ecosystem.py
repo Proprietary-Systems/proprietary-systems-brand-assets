@@ -44,14 +44,23 @@ def main() -> None:
             elif product.get("category") != group.get("id"):
                 fail(errors, f"{product_id} category does not match navigation group {group.get('id')}")
 
+    launcher = registry.get("launcher", {})
+    hidden_ids = launcher.get("hiddenProducts", [])
     if len(navigation_ids) != len(set(navigation_ids)):
         fail(errors, "a product appears in more than one navigation group")
-    if set(navigation_ids) != set(ids):
-        missing = sorted(set(ids) - set(navigation_ids))
+    if len(hidden_ids) != len(set(hidden_ids)):
+        fail(errors, "launcher hiddenProducts contains duplicates")
+    for product_id in hidden_ids:
+        if product_id not in product_by_id:
+            fail(errors, f"launcher references unknown hidden product {product_id}")
+    if set(navigation_ids) & set(hidden_ids):
+        fail(errors, "launcher products cannot be both visible and hidden")
+    projected_ids = set(navigation_ids) | set(hidden_ids)
+    if projected_ids != set(ids):
+        missing = sorted(set(ids) - projected_ids)
         extra = sorted(set(navigation_ids) - set(ids))
-        fail(errors, f"navigation/product mismatch; missing={missing}, extra={extra}")
+        fail(errors, f"launcher/product mismatch; missing={missing}, extra={extra}")
 
-    launcher = registry.get("launcher", {})
     featured_ids = launcher.get("featuredProducts", [])
     if launcher.get("columns") != 3:
         fail(errors, "launcher must use the canonical three-column product grid")
@@ -60,6 +69,8 @@ def main() -> None:
     for product_id in featured_ids:
         if product_id not in product_by_id:
             fail(errors, f"launcher references unknown featured product {product_id}")
+        elif product_id not in navigation_ids:
+            fail(errors, f"launcher featured product {product_id} is not visible in navigation")
 
     for product in products:
         product_id = product["id"]
