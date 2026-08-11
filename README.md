@@ -40,6 +40,7 @@ This directory contains the canonical Proprietary Systems logo package derived f
 | Checkout provider mapping | `brand-assets/checkout/stripe-branding.json` |
 | Integration guide | `brand-assets/docs/integration-guide.md` |
 | Visual QA sheet | `brand-assets/preview/proprietary-systems-logo-system-preview.png` |
+| Light/dark mark QA | `brand-assets/preview/logo-surface-modes-preview.png` |
 | Mark fidelity QA | `brand-assets/preview/mark-fidelity-comparison.png` |
 | Product icon QA, light | `brand-assets/preview/product-illustrations-v4-light-contact-sheet.png` |
 | Product icon QA, dark | `brand-assets/preview/product-illustrations-v4-dark-contact-sheet.png` |
@@ -56,6 +57,9 @@ This directory contains the canonical Proprietary Systems logo package derived f
 | Stripe logo on dark | `stripe-brand-assets/ps-stripe-logo-dark-bg.png` |
 | Website header | `brand-assets/svg/primary-horizontal-lockup.svg` |
 | Website compact/header fallback | `brand-assets/svg/secondary-horizontal-lockup.svg` |
+| Standalone mark on light | `brand-assets/svg/icon-only-mark-on-light.svg` |
+| Standalone mark on dark | `brand-assets/svg/icon-only-mark.svg` |
+| Sign-in mark on light | `brand-assets/svg/monochrome-dark-mark.svg` |
 | Favicon SVG | `brand-assets/svg/favicon.svg` |
 | Favicon ICO | `brand-assets/icons/favicon.ico` |
 | PWA 192 icon | `brand-assets/icons/app-icon-dark-192.png` |
@@ -71,10 +75,12 @@ This directory contains the canonical Proprietary Systems logo package derived f
 
 Use `brand-assets/modes.json` when an app needs to choose assets programmatically.
 
-| Surface mode | Header | Compact | Document/email | App/social |
-| --- | --- | --- | --- | --- |
-| Light UI | `brand-assets/svg/primary-horizontal-lockup.svg` | `brand-assets/svg/secondary-horizontal-lockup.svg` | `brand-assets/svg/monochrome-dark-horizontal.svg` | `brand-assets/icons/app-icon-light-512.png` |
-| Dark UI | `brand-assets/svg/primary-horizontal-lockup-on-dark.svg` | `brand-assets/svg/secondary-horizontal-lockup-on-dark.svg` | `brand-assets/svg/monochrome-white-horizontal.svg` | `brand-assets/icons/app-icon-dark-512.png` |
+| Surface mode | Header | Compact | Mark | Document/email | App/social |
+| --- | --- | --- | --- | --- | --- |
+| Light UI | `brand-assets/svg/primary-horizontal-lockup.svg` | `brand-assets/svg/secondary-horizontal-lockup.svg` | `brand-assets/svg/icon-only-mark-on-light.svg` | `brand-assets/svg/monochrome-dark-horizontal.svg` | `brand-assets/icons/app-icon-light-512.png` |
+| Dark UI | `brand-assets/svg/primary-horizontal-lockup-on-dark.svg` | `brand-assets/svg/secondary-horizontal-lockup-on-dark.svg` | `brand-assets/svg/icon-only-mark.svg` | `brand-assets/svg/monochrome-white-horizontal.svg` | `brand-assets/icons/app-icon-dark-512.png` |
+
+The full-color mark deliberately uses navy or off-white, mint, and a teal center overlap. Use the monochrome navy mark on light authentication surfaces when the overlap would read as visual noise.
 
 React callers can use:
 

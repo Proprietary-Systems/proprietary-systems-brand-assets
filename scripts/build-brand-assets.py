@@ -417,9 +417,10 @@ def write_svgs() -> None:
         ("secondary-horizontal-lockup", "secondary", 1600, 320, None),
         ("secondary-horizontal-lockup-on-dark", "secondary", 1600, 320, COLORS["navy"]),
     ]:
-        text_fill = COLORS["white"]
-        divider = COLORS["mint"]
-        mark_scheme = "full-dark"
+        on_dark = bg == COLORS["navy"]
+        text_fill = COLORS["white"] if on_dark else COLORS["navy"]
+        divider = COLORS["mint"] if on_dark else COLORS["navy"]
+        mark_scheme = "full-dark" if on_dark else "full-light"
         div1 = 370 if variant == "primary" else 290
         div2 = 1165 if variant == "primary" else 1240
         mark_w = 230 if variant == "primary" else 170
@@ -449,12 +450,20 @@ def write_svgs() -> None:
     svg_specs.append(("stacked-logo", 860, 860, "Proprietary Systems stacked logo", "\n  ".join(stacked_parts), None))
     svg_specs.append(("stacked-logo-on-dark", 860, 860, "Proprietary Systems stacked logo on dark", "\n  ".join(stacked_parts), COLORS["navy"]))
 
-    icon_parts = [svg_transform_mark(62, 94, 388, "full-dark")]
-    svg_specs.append(("icon-only-mark", 512, 512, "Proprietary Systems icon-only mark", "\n  ".join(icon_parts), None))
+    mark_specs = [
+        ("icon-only-mark", "full-dark", "Proprietary Systems icon-only mark on dark"),
+        ("icon-only-mark-on-light", "full-light", "Proprietary Systems icon-only mark on light"),
+        ("monochrome-dark-mark", "mono-dark", "Proprietary Systems monochrome navy mark"),
+        ("monochrome-white-mark", "mono-white", "Proprietary Systems monochrome white mark"),
+    ]
+    for slug, scheme, title in mark_specs:
+        parts = [svg_transform_mark(62, 94, 388, scheme)]
+        svg_specs.append((slug, 512, 512, title, "\n  ".join(parts), None))
 
-    wordmark_parts = [svg_ps_ai(700, 180, 168, COLORS["white"], COLORS["mint"], "middle")]
-    svg_specs.append(("wordmark-ps-ai", 1400, 360, "Proprietary Systems PS.AI wordmark", "\n  ".join(wordmark_parts), None))
-    svg_specs.append(("wordmark-ps-ai-on-dark", 1400, 360, "Proprietary Systems PS.AI wordmark on dark", "\n  ".join(wordmark_parts), COLORS["navy"]))
+    wordmark_light = [svg_ps_ai(700, 180, 168, COLORS["navy"], COLORS["mint"], "middle")]
+    wordmark_dark = [svg_ps_ai(700, 180, 168, COLORS["white"], COLORS["mint"], "middle")]
+    svg_specs.append(("wordmark-ps-ai", 1400, 360, "Proprietary Systems PS.AI wordmark on light", "\n  ".join(wordmark_light), None))
+    svg_specs.append(("wordmark-ps-ai-on-dark", 1400, 360, "Proprietary Systems PS.AI wordmark on dark", "\n  ".join(wordmark_dark), COLORS["navy"]))
 
     mono_white = [
         svg_transform_mark(75, 78, 190, "mono-white"),
@@ -538,6 +547,9 @@ def write_pngs() -> None:
         ("monochrome-dark-horizontal-on-light.svg", "monochrome-dark-horizontal-on-light.png", 2040, 480),
         ("stacked-logo-on-dark.svg", "stacked-logo-on-dark.png", 1600, 1600),
         ("icon-only-mark.svg", "icon-only-mark-transparent.png", 1024, 1024),
+        ("icon-only-mark-on-light.svg", "icon-only-mark-on-light-transparent.png", 1024, 1024),
+        ("monochrome-dark-mark.svg", "monochrome-dark-mark-transparent.png", 1024, 1024),
+        ("monochrome-white-mark.svg", "monochrome-white-mark-transparent.png", 1024, 1024),
         ("wordmark-ps-ai-on-dark.svg", "wordmark-ps-ai-on-dark.png", 1400, 360),
         ("wordmark-ps-ai.svg", "wordmark-ps-ai-transparent.png", 1400, 360),
     ]
@@ -618,6 +630,30 @@ def write_preview() -> None:
     preview.save(DIRS["preview"] / "proprietary-systems-logo-system-preview.png")
 
 
+def write_surface_modes_preview() -> None:
+    preview = Canvas(1600, 720, COLORS["mist"], scale=2)
+    preview.tracked_text((50, 54), "LOGO SURFACE MODES", 28, COLORS["navy"], 5, "la")
+    preview.rounded((50, 110, 775, 665), 18, COLORS["off_white"])
+    preview.rounded((825, 110, 1550, 665), 18, COLORS["navy"])
+    preview.text((90, 150), "LIGHT SURFACE", 22, COLORS["navy"], "la")
+    preview.text((865, 150), "DARK SURFACE", 22, COLORS["off_white"], "la")
+
+    def paste_png(path: Path, x: int, y: int, size: int) -> None:
+        image = Image.open(path).convert("RGBA")
+        image.thumbnail((size * preview.scale, size * preview.scale), Image.Resampling.LANCZOS)
+        preview.image.alpha_composite(image, (x * preview.scale, y * preview.scale))
+
+    paste_png(DIRS["png"] / "icon-only-mark-on-light-transparent.png", 100, 210, 270)
+    paste_png(DIRS["png"] / "monochrome-dark-mark-transparent.png", 430, 210, 270)
+    paste_png(DIRS["png"] / "icon-only-mark-transparent.png", 875, 210, 270)
+    paste_png(DIRS["png"] / "monochrome-white-mark-transparent.png", 1205, 210, 270)
+    preview.text((150, 550), "Full color", 22, COLORS["navy"], "la")
+    preview.text((455, 550), "Monochrome", 22, COLORS["navy"], "la")
+    preview.text((925, 550), "Full color", 22, COLORS["off_white"], "la")
+    preview.text((1230, 550), "Monochrome", 22, COLORS["off_white"], "la")
+    preview.save(DIRS["preview"] / "logo-surface-modes-preview.png")
+
+
 def write_fidelity_preview() -> None:
     reference_crop_path = DIRS["preview"] / "reference-icon-mark-crop.png"
     current_render_svg = DIRS["preview"] / "current-traced-icon-mark.svg"
@@ -665,7 +701,8 @@ def write_manifest() -> None:
             "compactLogo": "brand-assets/svg/secondary-horizontal-lockup.svg",
             "documentLogo": "brand-assets/svg/monochrome-dark-horizontal.svg",
             "wordmark": "brand-assets/svg/wordmark-ps-ai.svg",
-            "iconMark": "brand-assets/svg/icon-only-mark.svg",
+            "iconMark": "brand-assets/svg/icon-only-mark-on-light.svg",
+            "monochromeMark": "brand-assets/svg/monochrome-dark-mark.svg",
             "appIcon": "brand-assets/icons/app-icon-light-512.png",
             "recommendedTextColor": COLORS["navy"],
             "recommendedBackground": COLORS["off_white"],
@@ -678,6 +715,7 @@ def write_manifest() -> None:
             "documentLogo": "brand-assets/svg/monochrome-white-horizontal.svg",
             "wordmark": "brand-assets/svg/wordmark-ps-ai-on-dark.svg",
             "iconMark": "brand-assets/svg/icon-only-mark.svg",
+            "monochromeMark": "brand-assets/svg/monochrome-white-mark.svg",
             "appIcon": "brand-assets/icons/app-icon-dark-512.png",
             "recommendedTextColor": COLORS["off_white"],
             "recommendedBackground": COLORS["navy"],
@@ -696,6 +734,7 @@ def write_manifest() -> None:
     }
     manifest = {
         "brand": "Proprietary Systems",
+        "version": json.loads((ROOT / "package.json").read_text(encoding="utf-8"))["version"],
         "domain": "proprietarysystems.ai",
         "repository": {
             "github": "https://github.com/Proprietary-Systems/proprietary-systems-brand-assets",
@@ -719,6 +758,7 @@ def write_manifest() -> None:
         },
         "qualityChecks": {
             "logoSystemPreview": "brand-assets/preview/proprietary-systems-logo-system-preview.png",
+            "logoSurfaceModes": "brand-assets/preview/logo-surface-modes-preview.png",
             "markFidelityComparison": "brand-assets/preview/mark-fidelity-comparison.png",
             "productIconContactSheet": "brand-assets/preview/product-illustrations-v4-light-contact-sheet.png",
             "productIconDarkContactSheet": "brand-assets/preview/product-illustrations-v4-dark-contact-sheet.png",
@@ -780,9 +820,18 @@ def write_manifest() -> None:
                 "tags": ["stacked", "dark-mode", "dark-background", "presentation", "full-color"],
             },
             "iconOnlyMark": {
-                "svg": "brand-assets/svg/icon-only-mark.svg",
-                "pngTransparent": "brand-assets/png/icon-only-mark-transparent.png",
-                "tags": ["icon-only", "mark", "transparent", "mode-flexible"],
+                "svgOnLight": "brand-assets/svg/icon-only-mark-on-light.svg",
+                "svgOnDark": "brand-assets/svg/icon-only-mark.svg",
+                "pngOnLightTransparent": "brand-assets/png/icon-only-mark-on-light-transparent.png",
+                "pngOnDarkTransparent": "brand-assets/png/icon-only-mark-transparent.png",
+                "tags": ["icon-only", "mark", "transparent", "surface-specific", "full-color"],
+            },
+            "monochromeMarks": {
+                "darkOnLight": "brand-assets/svg/monochrome-dark-mark.svg",
+                "whiteOnDark": "brand-assets/svg/monochrome-white-mark.svg",
+                "darkPngTransparent": "brand-assets/png/monochrome-dark-mark-transparent.png",
+                "whitePngTransparent": "brand-assets/png/monochrome-white-mark-transparent.png",
+                "tags": ["icon-only", "mark", "transparent", "monochrome", "surface-specific"],
             },
             "wordmarkPsAi": {
                 "svg": "brand-assets/svg/wordmark-ps-ai.svg",
@@ -833,6 +882,9 @@ def write_manifest() -> None:
             "websiteAndApps": {
                 "headerLogo": "brand-assets/svg/primary-horizontal-lockup.svg",
                 "compactLogo": "brand-assets/svg/secondary-horizontal-lockup.svg",
+                "markOnLight": "brand-assets/svg/icon-only-mark-on-light.svg",
+                "markOnDark": "brand-assets/svg/icon-only-mark.svg",
+                "signinMark": "brand-assets/svg/monochrome-dark-mark.svg",
                 "favicon": "brand-assets/svg/favicon.svg",
                 "pwaIcon192": "brand-assets/icons/app-icon-dark-192.png",
                 "pwaIcon512": "brand-assets/icons/app-icon-dark-512.png",
@@ -900,6 +952,7 @@ def main() -> None:
     write_svgs()
     write_pngs()
     write_preview()
+    write_surface_modes_preview()
     write_fidelity_preview()
     build_product_illustrations()
     write_manifest()

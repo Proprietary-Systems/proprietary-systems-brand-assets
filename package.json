@@ -1,6 +1,6 @@
 {
   "name": "@proprietary-systems/brand-assets",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "description": "Canonical Proprietary Systems logo assets, app icons, favicons, and shared retrieval helpers.",
   "repository": {
@@ -15,6 +15,7 @@
     "verify:react": "tsc --noEmit -p tsconfig.json",
     "verify:tools": "rsvg-convert --version && potrace --version && magick -version",
     "verify:assets": "magick identify png/primary-horizontal-lockup-on-dark.png icons/favicon.ico ../stripe-brand-assets/ps-stripe-logo-horizontal.png",
+    "verify:logo-modes": "python3 scripts/validate-logo-modes.py",
     "verify:ecosystem": "python3 scripts/validate-ecosystem.py"
   },
   "exports": {

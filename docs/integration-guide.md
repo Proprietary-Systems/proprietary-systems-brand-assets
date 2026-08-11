@@ -12,6 +12,8 @@ For application consumption, use `brand-assets/ecosystem/registry.json` for prod
 | Compact header/app nav | `brand-assets/svg/secondary-horizontal-lockup.svg` | `brand-assets/svg/secondary-horizontal-lockup-on-dark.svg` |
 | Documents/email | `brand-assets/svg/monochrome-dark-horizontal.svg` | `brand-assets/svg/monochrome-white-horizontal.svg` |
 | Wordmark | `brand-assets/svg/wordmark-ps-ai.svg` | `brand-assets/svg/wordmark-ps-ai-on-dark.svg` |
+| Standalone mark | `brand-assets/svg/icon-only-mark-on-light.svg` | `brand-assets/svg/icon-only-mark.svg` |
+| Monochrome mark | `brand-assets/svg/monochrome-dark-mark.svg` | `brand-assets/svg/monochrome-white-mark.svg` |
 | App/social icon | `brand-assets/icons/app-icon-light-512.png` | `brand-assets/icons/app-icon-dark-512.png` |
 
 ## Landing Pages
@@ -24,7 +26,8 @@ For application consumption, use `brand-assets/ecosystem/registry.json` for prod
 ## Product Apps
 
 - Use `brand-assets/snippets/product-app-header.html` for dense app headers.
-- Use `brand-assets/svg/icon-only-mark.svg` for compact sidebars, launchers, and pinned navigation.
+- Choose the standalone mark by surface from the table above. The full-color mark intentionally includes navy or off-white, mint, and a teal center overlap.
+- Use `brand-assets/svg/monochrome-dark-mark.svg` for sign-in and other restrained marks on light backgrounds.
 - Use app icons from `brand-assets/icons/` for mobile/PWA surfaces.
 - Build launchers and product navigation from `brand-assets/ecosystem/registry.json`.
 - Use the shared `ProductIllustration`, `ProductTile`, and `AppLauncher` React components instead of reconstructing asset paths.

@@ -7,9 +7,12 @@ export type ProprietarySystemsLogoVariant =
   | "secondaryOnDark"
   | "stacked"
   | "icon"
+  | "iconOnLight"
   | "wordmark"
   | "monochromeWhite"
   | "monochromeDark"
+  | "monochromeWhiteMark"
+  | "monochromeDarkMark"
   | "favicon";
 
 export type ProprietarySystemsLogoMode = "light" | "dark" | "any";
@@ -31,9 +34,12 @@ const LOGO_PATHS: Record<ProprietarySystemsLogoVariant, string> = {
   secondaryOnDark: "brand-assets/svg/secondary-horizontal-lockup-on-dark.svg",
   stacked: "brand-assets/svg/stacked-logo.svg",
   icon: "brand-assets/svg/icon-only-mark.svg",
+  iconOnLight: "brand-assets/svg/icon-only-mark-on-light.svg",
   wordmark: "brand-assets/svg/wordmark-ps-ai.svg",
   monochromeWhite: "brand-assets/svg/monochrome-white-horizontal.svg",
   monochromeDark: "brand-assets/svg/monochrome-dark-horizontal.svg",
+  monochromeWhiteMark: "brand-assets/svg/monochrome-white-mark.svg",
+  monochromeDarkMark: "brand-assets/svg/monochrome-dark-mark.svg",
   favicon: "brand-assets/svg/favicon.svg",
 };
 
@@ -43,7 +49,7 @@ const MODE_PATHS: Record<ProprietarySystemsLogoMode, Record<ProprietarySystemsLo
     compact: "brand-assets/svg/secondary-horizontal-lockup.svg",
     document: "brand-assets/svg/monochrome-dark-horizontal.svg",
     wordmark: "brand-assets/svg/wordmark-ps-ai.svg",
-    mark: "brand-assets/svg/icon-only-mark.svg",
+    mark: "brand-assets/svg/icon-only-mark-on-light.svg",
     appIcon: "brand-assets/icons/app-icon-light-512.png",
     favicon: "brand-assets/svg/favicon.svg",
     socialAvatar: "brand-assets/icons/app-icon-light-1024.png",
@@ -63,7 +69,7 @@ const MODE_PATHS: Record<ProprietarySystemsLogoMode, Record<ProprietarySystemsLo
     compact: "brand-assets/svg/secondary-horizontal-lockup.svg",
     document: "brand-assets/svg/monochrome-dark-horizontal.svg",
     wordmark: "brand-assets/svg/wordmark-ps-ai.svg",
-    mark: "brand-assets/svg/icon-only-mark.svg",
+    mark: "brand-assets/svg/favicon.svg",
     appIcon: "brand-assets/icons/app-icon-dark-512.png",
     favicon: "brand-assets/svg/favicon.svg",
     socialAvatar: "brand-assets/icons/app-icon-dark-1024.png",

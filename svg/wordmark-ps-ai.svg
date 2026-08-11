@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="360" viewBox="0 0 1400 360" role="img" aria-labelledby="title desc">
-  <title id="title">Proprietary Systems PS.AI wordmark</title>
+  <title id="title">Proprietary Systems PS.AI wordmark on light</title>
   <desc id="desc">Proprietary Systems logo asset generated from the approved brand specification.</desc>
   <style>
     .ps-type { font-family: "Avenir Next", Avenir, Montserrat, "Century Gothic", Arial, sans-serif; font-weight: 600; }
     .ps-wordmark { font-family: "Avenir Next", Avenir, Montserrat, "Century Gothic", Arial, sans-serif; font-weight: 500; }
   </style>
-<text class="ps-wordmark" x="700.00" y="180.00" font-size="168.00" letter-spacing="0" text-anchor="middle" dominant-baseline="middle"><tspan fill="#FFFFFF">PS</tspan><tspan fill="#00E5C2">.AI</tspan></text>
+<text class="ps-wordmark" x="700.00" y="180.00" font-size="168.00" letter-spacing="0" text-anchor="middle" dominant-baseline="middle"><tspan fill="#0A2030">PS</tspan><tspan fill="#00E5C2">.AI</tspan></text>
 </svg>
