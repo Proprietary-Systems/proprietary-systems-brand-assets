@@ -38,12 +38,12 @@ M757 4158 c-16 -12 -17 -112 -15 -1527 2 -1170 6 -1515 15 -1518
 104 87 180 179 228 l61 32 735 2 c404 1 1207 2 1783 2 1037 1
 1049 1 1119 22 91 27 137 56 216 138 91 95 332 398 332 419 0
 5 -34 12 -77 16 -42 3 -1186 6 -2543 6 -1957 0 -2470 -3 -2483
--12z" fill="#F6FBFB"/>
+-12z" fill="#0A2030"/>
   </g>
   </svg>
-  <line x1="370" y1="70" x2="370" y2="350" stroke="#00E5C2" stroke-width="4"/>
-  <line x1="1165" y1="70" x2="1165" y2="350" stroke="#00E5C2" stroke-width="4"/>
-  <text class="ps-type" x="455" y="174" font-size="58" letter-spacing="24" fill="#FFFFFF">PROPRIETARY</text>
-  <text class="ps-type" x="455" y="256" font-size="58" letter-spacing="31" fill="#FFFFFF">SYSTEMS</text>
-  <text class="ps-wordmark" x="1265.00" y="216.00" font-size="96.00" letter-spacing="0" text-anchor="start" dominant-baseline="middle"><tspan fill="#FFFFFF">PS</tspan><tspan fill="#00E5C2">.AI</tspan></text>
+  <line x1="370" y1="70" x2="370" y2="350" stroke="#0A2030" stroke-width="4"/>
+  <line x1="1165" y1="70" x2="1165" y2="350" stroke="#0A2030" stroke-width="4"/>
+  <text class="ps-type" x="455" y="174" font-size="58" letter-spacing="24" fill="#0A2030">PROPRIETARY</text>
+  <text class="ps-type" x="455" y="256" font-size="58" letter-spacing="31" fill="#0A2030">SYSTEMS</text>
+  <text class="ps-wordmark" x="1265.00" y="216.00" font-size="96.00" letter-spacing="0" text-anchor="start" dominant-baseline="middle"><tspan fill="#0A2030">PS</tspan><tspan fill="#00E5C2">.AI</tspan></text>
 </svg>

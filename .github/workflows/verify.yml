@@ -39,5 +39,8 @@ jobs:
       - name: Verify React exports
         run: npm run verify:react
 
+      - name: Verify logo surface modes
+        run: npm run verify:logo-modes
+
       - name: Verify ecosystem registry and generated assets
         run: npm run verify:ecosystem

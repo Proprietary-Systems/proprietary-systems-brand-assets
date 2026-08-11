@@ -1,5 +1,6 @@
 {
   "brand": "Proprietary Systems",
+  "version": "0.2.1",
   "domain": "proprietarysystems.ai",
   "repository": {
     "github": "https://github.com/Proprietary-Systems/proprietary-systems-brand-assets",
@@ -36,6 +37,7 @@
   },
   "qualityChecks": {
     "logoSystemPreview": "brand-assets/preview/proprietary-systems-logo-system-preview.png",
+    "logoSurfaceModes": "brand-assets/preview/logo-surface-modes-preview.png",
     "markFidelityComparison": "brand-assets/preview/mark-fidelity-comparison.png",
     "productIconContactSheet": "brand-assets/preview/product-illustrations-v4-light-contact-sheet.png",
     "productIconDarkContactSheet": "brand-assets/preview/product-illustrations-v4-dark-contact-sheet.png",
@@ -81,7 +83,8 @@
       "compactLogo": "brand-assets/svg/secondary-horizontal-lockup.svg",
       "documentLogo": "brand-assets/svg/monochrome-dark-horizontal.svg",
       "wordmark": "brand-assets/svg/wordmark-ps-ai.svg",
-      "iconMark": "brand-assets/svg/icon-only-mark.svg",
+      "iconMark": "brand-assets/svg/icon-only-mark-on-light.svg",
+      "monochromeMark": "brand-assets/svg/monochrome-dark-mark.svg",
       "appIcon": "brand-assets/icons/app-icon-light-512.png",
       "recommendedTextColor": "#0A2030",
       "recommendedBackground": "#F6FBFB",
@@ -99,6 +102,7 @@
       "documentLogo": "brand-assets/svg/monochrome-white-horizontal.svg",
       "wordmark": "brand-assets/svg/wordmark-ps-ai-on-dark.svg",
       "iconMark": "brand-assets/svg/icon-only-mark.svg",
+      "monochromeMark": "brand-assets/svg/monochrome-white-mark.svg",
       "appIcon": "brand-assets/icons/app-icon-dark-512.png",
       "recommendedTextColor": "#F6FBFB",
       "recommendedBackground": "#0A2030",
@@ -166,13 +170,29 @@
       ]
     },
     "iconOnlyMark": {
-      "svg": "brand-assets/svg/icon-only-mark.svg",
-      "pngTransparent": "brand-assets/png/icon-only-mark-transparent.png",
+      "svgOnLight": "brand-assets/svg/icon-only-mark-on-light.svg",
+      "svgOnDark": "brand-assets/svg/icon-only-mark.svg",
+      "pngOnLightTransparent": "brand-assets/png/icon-only-mark-on-light-transparent.png",
+      "pngOnDarkTransparent": "brand-assets/png/icon-only-mark-transparent.png",
       "tags": [
         "icon-only",
         "mark",
         "transparent",
-        "mode-flexible"
+        "surface-specific",
+        "full-color"
+      ]
+    },
+    "monochromeMarks": {
+      "darkOnLight": "brand-assets/svg/monochrome-dark-mark.svg",
+      "whiteOnDark": "brand-assets/svg/monochrome-white-mark.svg",
+      "darkPngTransparent": "brand-assets/png/monochrome-dark-mark-transparent.png",
+      "whitePngTransparent": "brand-assets/png/monochrome-white-mark-transparent.png",
+      "tags": [
+        "icon-only",
+        "mark",
+        "transparent",
+        "monochrome",
+        "surface-specific"
       ]
     },
     "wordmarkPsAi": {
@@ -253,6 +273,9 @@
     "websiteAndApps": {
       "headerLogo": "brand-assets/svg/primary-horizontal-lockup.svg",
       "compactLogo": "brand-assets/svg/secondary-horizontal-lockup.svg",
+      "markOnLight": "brand-assets/svg/icon-only-mark-on-light.svg",
+      "markOnDark": "brand-assets/svg/icon-only-mark.svg",
+      "signinMark": "brand-assets/svg/monochrome-dark-mark.svg",
       "favicon": "brand-assets/svg/favicon.svg",
       "pwaIcon192": "brand-assets/icons/app-icon-dark-192.png",
       "pwaIcon512": "brand-assets/icons/app-icon-dark-512.png",
