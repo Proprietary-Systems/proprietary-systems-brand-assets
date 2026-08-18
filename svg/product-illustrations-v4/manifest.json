@@ -1,7 +1,7 @@
 {
   "name": "Proprietary Systems Flat-Object Product Icons",
-  "version": "4.2.0",
-  "taxonomyVersion": "2.1.0",
+  "version": "4.3.0",
+  "taxonomyVersion": "2.2.0",
   "ecosystemRegistry": "../../ecosystem/registry.json",
   "viewBox": "0 0 256 256",
   "preferred": true,
@@ -219,6 +219,26 @@
       "variants": {
         "light": "light/ps-projects.svg",
         "dark": "dark/ps-projects.svg"
+      }
+    },
+    {
+      "id": "ps-retail-expansion",
+      "label": "PS Retail Expansion",
+      "productClass": "suite-module",
+      "category": "operations",
+      "technicalBoundary": "platform-module",
+      "defaultRoute": "/retail-expansion",
+      "marketingPath": "/products/retail-expansion",
+      "definition": "real estate site selection, lease pipeline control, and project execution",
+      "metaphor": "commercial site connected to an accountable project checklist",
+      "excludes": [
+        "website publishing",
+        "generic customer relationship management"
+      ],
+      "master": "masters/ps-retail-expansion.svg",
+      "variants": {
+        "light": "light/ps-retail-expansion.svg",
+        "dark": "dark/ps-retail-expansion.svg"
       }
     },
     {

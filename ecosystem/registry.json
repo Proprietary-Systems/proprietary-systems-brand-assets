@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "1.2.2",
-  "lastReviewed": "2026-08-03",
+  "version": "1.3.0",
+  "lastReviewed": "2026-08-16",
   "brand": "Proprietary Systems",
   "suiteName": "Proprietary Systems",
   "positioning": "One intelligent operating system for the entire business.",
@@ -157,6 +157,7 @@
           "ps-dialer",
           "ps-contracts",
           "ps-projects",
+          "ps-retail-expansion",
           "ps-client-portal",
           "ps-docs",
           "ps-sheets",
@@ -264,6 +265,7 @@
       "label": "Operations",
       "products": [
         "ps-projects",
+        "ps-retail-expansion",
         "ps-client-portal",
         "ps-calendar",
         "ps-messages",
@@ -537,6 +539,33 @@
         "excludes": [
           "document authoring",
           "agreement lifecycle"
+        ]
+      }
+    },
+    {
+      "id": "ps-retail-expansion",
+      "label": "PS Retail Expansion",
+      "productClass": "suite-module",
+      "slug": "retail-expansion",
+      "category": "operations",
+      "technicalBoundary": "platform-module",
+      "includedInSuite": true,
+      "defaultRoute": "/retail-expansion",
+      "marketingPath": "/products/retail-expansion",
+      "definition": "real estate site selection, lease pipeline control, and project execution",
+      "features": [
+        "site pipeline",
+        "site economics",
+        "contacts and activity",
+        "critical dates and reminders",
+        "lease files and versions",
+        "project setup after lease signing"
+      ],
+      "visual": {
+        "metaphor": "commercial site connected to an accountable project checklist",
+        "excludes": [
+          "website publishing",
+          "generic customer relationship management"
         ]
       }
     },

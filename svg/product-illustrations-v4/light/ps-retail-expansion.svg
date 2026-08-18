@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc" data-illustration-version="4" data-theme="light" shape-rendering="geometricPrecision">
+<title id="title">PS Retail Expansion flat-object product icon</title><desc id="desc">Real estate site selection and project execution, represented by a commercial site and completed checklist.</desc>
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0A2030" flood-opacity=".12"/></filter></defs>
+<g filter="url(#shadow)">
+<path d="M42 37h172v181H42Z" fill="#E6F2F2"/><path d="M62 84 128 47l66 37v114H62Z" fill="#fff" stroke="#0A2030" stroke-width="8" stroke-linejoin="round"/>
+<path d="M101 198v-61h54v61M82 105h27v24H82Zm65 0h27v24h-27Z" fill="#B8F5E8" stroke="#0097A7" stroke-width="7"/>
+<path d="m79 218 15 15 29-34m14 19h39" fill="none" stroke="#00A58C" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</g></svg>
